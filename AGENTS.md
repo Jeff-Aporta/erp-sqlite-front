@@ -1,4 +1,6 @@
 # AGENTS.md — ERP SQLite
+> **Norma única:** [ESTANDAR — ecosistema VPS](https://github.com/Jeff-Aporta/dev-vps/blob/main/ESTANDAR.md). Gana sobre este archivo si hay conflicto.
+
 
 Punto de entrada para cualquier agente. App de web components sobre el kit **iswc-root**, creada con
 `create-iswc-app` (estándar **iswc-foundation**): misma estructura, mismas tareas y mismas reglas que

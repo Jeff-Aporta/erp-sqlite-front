@@ -40,3 +40,7 @@ deno task vendor:api --local            # desde ../erp-sqlite-api sin publicar (
 Submódulo `app/erp-sqlite-front/` del monorepo [`erp-sqlite`](https://github.com/Jeff-Aporta/erp-sqlite). Es
 estático (`dist/cdn` va versionado: no hay build en el VPS); nginx lo sirve desde
 `/opt/erp-sqlite/app/erp-sqlite-front` junto al API, con el snippet `deploy/nginx-erp-sqlite.conf` del monorepo.
+
+## Norma
+
+[ESTANDAR — ecosistema VPS](https://github.com/Jeff-Aporta/dev-vps/blob/main/ESTANDAR.md): norma única; gana sobre este repo si hay conflicto.
