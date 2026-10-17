@@ -1,65 +1,52 @@
 @use "tokens" as t;
 @use "mixins" as m;
 
-/* erp-hola — pantalla de bienvenida: portada + tarjetas + modal. */
+/* erp-hola — panel principal: cabecera + rejilla de tarjetas de bases. */
 :host {
   @include m.host-bloque;
+  display: block;
+}
+
+.panel {
   display: grid;
-  gap: t.esp(8);
-  max-width: 64rem;
+  gap: t.esp(6);
+  max-width: 72rem;
   margin: 0 auto;
 }
 
-.hero {
+.panel-head {
   display: grid;
-  gap: t.esp(4);
-  justify-items: start;
-  padding: t.esp(8) 0 t.esp(4);
-
-  .kicker {
-    @include m.rotulo(0.75);
-    margin: 0;
-    color: var(--iswc-brand-text);
-    font-size: 0.75rem;
-  }
-
-  .lede {
-    max-width: 40rem;
-    margin: 0;
-    color: var(--iswc-text-soft);
-    font-size: 1.125rem;
-    line-height: 1.55;
-  }
-
-  .acciones,
-  .chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: t.esp(2);
-  }
+  gap: t.esp(2);
+  .titulo { margin: 0; font-size: clamp(1.35rem, 2.4vw, 1.8rem); font-weight: 600; letter-spacing: -0.01em; }
+  .lede { margin: 0; color: var(--iswc-text-soft); line-height: 1.55; max-width: 46rem; }
+  code { font-size: 0.9em; }
 }
 
-.tarjetas {
+.grid {
   display: grid;
-  gap: t.esp(4);
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+}
 
-  p {
-    margin: 0;
-    color: var(--iswc-text-soft);
-    line-height: 1.5;
-  }
-
-  iswc-icon {
-    color: var(--iswc-accent);
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: t.esp(3);
+  margin-top: t.esp(1);
+  .stat {
+    display: grid;
+    gap: 0.15rem;
+    strong { font-size: 1.25rem; font-weight: 600; }
+    span { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--iswc-text-muted); }
   }
 }
 
-#modal {
-  --iswc-dialog-width: min(36rem, calc(100vw - 2rem));
-
-  iswc-code {
-    display: block;
-    margin-top: t.esp(3);
-  }
+.cargando {
+  display: flex;
+  align-items: center;
+  gap: t.esp(2);
+  color: var(--iswc-text-muted);
+  padding: t.esp(6) 0;
 }
+
+.vacio { color: var(--iswc-text-muted); padding: t.esp(6) 0; }
