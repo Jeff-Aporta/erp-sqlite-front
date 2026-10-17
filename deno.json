@@ -35,5 +35,6 @@
     "test:all": "deno run -A scripts/gate/run-test-all.mjs",
     "test:all:halt": "deno run -A scripts/gate/run-test-all.mjs --halt",
     "sync:entregable": "deno run -A scripts/gate/sync-to-entregable.mjs"
-  }
+  },
+  "erp": { "apiSha": "2be233e03b7d005d5ca97b0b57b59b20ac7c0d2f" }
 }

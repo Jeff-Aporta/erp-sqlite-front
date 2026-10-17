@@ -1,8 +1,8 @@
-# ERP SQLite · front
+# erp-sqlite-front
 
 App de web components (vanilla, sin framework) sobre el kit
 [iswc-root](https://github.com/Jeff-Aporta/is-webcomponents), creada con `create-iswc-app`.
-Consume el API del repo hermano [`api`](../api) (login y usuarios DER, db-admin).
+Consume [`erp-sqlite-api`](https://github.com/Jeff-Aporta/erp-sqlite-api) (login y usuarios DER, db-admin).
 
 ```bash
 deno install
@@ -27,14 +27,16 @@ El API se busca en el mismo origen (`/api`); otro origen: `<meta name="erp-api" 
 DER autentica solo por `Authorization: Bearer`: el token va en `sessionStorage` (o `localStorage`
 con «Recordar»). La seguridad real es del API (401/429); el front solo evita pantallas inútiles.
 
-`deno task vendor:api` copia `../api/dist/cdn/front.ts`; con el API publicado se pinea por CDN:
-`ERP_API_SDK=https://cdn.jsdelivr.net/gh/<owner>/<repo-api>@<sha40>/dist/cdn/front.ts deno task vendor:api`.
+El SDK se toma del CDN del API, pineado en `deno.json` → `erp.apiSha`:
+
+```bash
+deno task vendor:api                    # re-vendoriza el pin actual
+deno task vendor:api --sha=<sha40>      # sube el pin al commit publicado de erp-sqlite-api
+deno task vendor:api --local            # desde ../api sin publicar (solo para probar)
+```
 
 ## Despliegue
 
-Es estático: en el VPS se clona en `/opt/erp-sqlite/front` y nginx lo sirve junto al API con el
-snippet `deploy/nginx-erp-sqlite.conf` del repo `api` (que además bloquea `src/`, `tests/`, `specs/`…).
-
-```bash
-git clone <este repo> /opt/erp-sqlite/front     # dist/cdn va versionado: no hay build en el VPS
-```
+Submódulo `front/` del monorepo [`erp-sqlite`](https://github.com/Jeff-Aporta/erp-sqlite). Es
+estático (`dist/cdn` va versionado: no hay build en el VPS); nginx lo sirve desde
+`/opt/erp-sqlite/front` junto al API, con el snippet `deploy/nginx-erp-sqlite.conf` del monorepo.

@@ -1,4 +1,4 @@
-// @vendor 2026-10-17T16:14:23.595Z erp-sqlite/api (checkout local)
+// @vendor 2026-10-17T18:23:09.477Z https://cdn.jsdelivr.net/gh/Jeff-Aporta/erp-sqlite-api@2be233e03b7d005d5ca97b0b57b59b20ac7c0d2f/dist/cdn/front.ts
 // @vendor-pin 2026-10-17T16:10:00Z
 /**
  * Contrato de cliente del admin SQLite (repo erp-sqlite/api).
