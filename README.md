@@ -32,11 +32,11 @@ El SDK se toma del CDN del API, pineado en `deno.json` → `erp.apiSha`:
 ```bash
 deno task vendor:api                    # re-vendoriza el pin actual
 deno task vendor:api --sha=<sha40>      # sube el pin al commit publicado de erp-sqlite-api
-deno task vendor:api --local            # desde ../api sin publicar (solo para probar)
+deno task vendor:api --local            # desde ../erp-sqlite-api sin publicar (solo para probar)
 ```
 
 ## Despliegue
 
-Submódulo `front/` del monorepo [`erp-sqlite`](https://github.com/Jeff-Aporta/erp-sqlite). Es
+Submódulo `app/erp-sqlite-front/` del monorepo [`erp-sqlite`](https://github.com/Jeff-Aporta/erp-sqlite). Es
 estático (`dist/cdn` va versionado: no hay build en el VPS); nginx lo sirve desde
-`/opt/erp-sqlite/front` junto al API, con el snippet `deploy/nginx-erp-sqlite.conf` del monorepo.
+`/opt/erp-sqlite/app/erp-sqlite-front` junto al API, con el snippet `deploy/nginx-erp-sqlite.conf` del monorepo.

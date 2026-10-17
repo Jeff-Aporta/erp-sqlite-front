@@ -3,7 +3,7 @@
  *
  *   deno task vendor:api                       # CDN pineado: deno.json → erp.apiSha
  *   deno task vendor:api --sha=<sha40>         # sube el pin y re-vendoriza
- *   deno task vendor:api --local               # desde ../api (checkout del monorepo, sin publicar)
+ *   deno task vendor:api --local               # desde ../erp-sqlite-api (checkout del monorepo, sin publicar)
  *   ERP_API_SDK=<url|ruta> deno task vendor:api
  *
  * Fuente publicada: https://cdn.jsdelivr.net/gh/Jeff-Aporta/erp-sqlite-api@<sha40>/dist/cdn/front.ts
@@ -22,7 +22,7 @@ if (shaNuevo !== undefined && !/^[0-9a-f]{40}$/.test(shaNuevo)) throw new Error(
 const sha: string | undefined = shaNuevo ?? config.erp?.apiSha;
 
 const fuente = Deno.env.get('ERP_API_SDK')
-  ?? (arg('local') ? join(raiz, '..', 'api', 'dist', 'cdn', 'front.ts') : null)
+  ?? (arg('local') ? join(raiz, '..', 'erp-sqlite-api', 'dist', 'cdn', 'front.ts') : null)
   ?? (sha ? `https://cdn.jsdelivr.net/gh/${REPO}@${sha}/dist/cdn/front.ts` : null);
 if (!fuente) throw new Error('vendor:api: falta el pin (deno.json → erp.apiSha) o --sha=<sha40>');
 
