@@ -1,0 +1,6 @@
+[
+  { "tag": "erp-app", "file": "../../src/js/components/erp/erp-app.json" },
+  { "tag": "erp-hola-mundo", "file": "../hola/components/erp-hola-mundo.json" },
+  { "tag": "erp-hola", "file": "../hola/components/erp-hola.json" },
+  { "tag": "erp-login", "file": "../login/components/erp-login.json" }
+]

@@ -1,0 +1,10 @@
+/* erp-login — centra la puerta de acceso en la vista. Colores siempre desde tokens del kit. */
+:host {
+  display: grid;
+  place-items: center;
+  min-height: 70dvh;
+}
+
+iswc-login {
+  width: min(100%, 26rem);
+}

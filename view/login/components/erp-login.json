@@ -1,0 +1,28 @@
+{
+  "$schema": "iswc-preview/v1",
+  "tag": "erp-login",
+  "category": "login",
+  "navTitle": "Login",
+  "title": "&lt;erp-login&gt;",
+  "titleHtml": false,
+  "storageKey": "docs-erp-login",
+  "styles": ".stage{padding:1rem 2rem}",
+  "sections": [
+    {
+      "id": "intro",
+      "title": "&lt;erp-login&gt;",
+      "lede": "Puerta de acceso: <iswc-login> conectado a la sesión DER del API.",
+      "blocks": [
+        {
+          "kind": "demo",
+          "html": "<div class=\"stage\"><erp-login id=\"login\"></erp-login></div>",
+          "target": "#login",
+          "controls": [
+            { "control": "text", "prop": "props:aviso", "label": "aviso", "default": "" }
+          ]
+        },
+        { "kind": "html", "html": "<iswc-callout tone=\"info\"><strong slot=\"title\">Cuándo usarlo</strong>Como vista inicial mientras no haya sesión; <erp-app> la monta solo.</iswc-callout><iswc-callout tone=\"warning\"><strong slot=\"title\">Cuándo no</strong>No valides credenciales en el front: el API responde 401/429.</iswc-callout>" }
+      ]
+    }
+  ]
+}

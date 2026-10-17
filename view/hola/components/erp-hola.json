@@ -1,0 +1,28 @@
+{
+  "$schema": "iswc-preview/v1",
+  "tag": "erp-hola",
+  "category": "hola",
+  "navTitle": "Bienvenida",
+  "title": "&lt;erp-hola&gt;",
+  "titleHtml": false,
+  "storageKey": "docs-erp-hola",
+  "styles": ".stage{padding:1rem 2rem}",
+  "sections": [
+    {
+      "id": "intro",
+      "title": "&lt;erp-hola&gt;",
+      "lede": "Pantalla de bienvenida: portada, tarjetas y un modal.",
+      "blocks": [
+        {
+          "kind": "demo",
+          "html": "<div class=\"stage\"><erp-hola id=\"hola\"></erp-hola></div>",
+          "target": "#hola",
+          "controls": [
+            { "control": "boolean", "prop": "props:modal", "label": "modal", "default": false }
+          ]
+        },
+        { "kind": "html", "html": "<iswc-callout tone=\"info\"><strong slot=\"title\">Cuándo usarlo</strong>Como referencia de un shell de vista hecho solo con piezas del kit.</iswc-callout><iswc-callout tone=\"warning\"><strong slot=\"title\">Cuándo no</strong>Reemplázala por la portada real de la app.</iswc-callout>" }
+      ]
+    }
+  ]
+}

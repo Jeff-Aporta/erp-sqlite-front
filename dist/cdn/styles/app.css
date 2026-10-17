@@ -1,0 +1,1 @@
+@charset "UTF-8";html,body{margin:0;min-height:100%;background:var(--iswc-bg);color:var(--iswc-text);font-family:var(--iswc-font-sans)}html:not([data-app-ready]) body{visibility:hidden}
