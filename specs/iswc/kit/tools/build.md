@@ -1,4 +1,4 @@
-<!-- Copia de skills/iswc-root/tools/build.md del kit Jeff-Aporta/is-webcomponents@c08f58a5a048a396b7eeca23cb222b267bdf8ac6. No editar: se refresca con `deno task vendor:iswc`. -->
+<!-- Copia de skills/iswc-root/tools/build.md del kit Jeff-Aporta/is-webcomponents@027a9dfcc97abfb3b156470dc3e25a86115aeabd. No editar: se refresca con `deno task vendor:iswc`. -->
 <!-- @vendor 2026-10-13T14:13:48.240Z Jeff-Aporta/is-webcomponents@main skills/iswc-root/tools/build.md -->
 # `/iswc-root:build`
 

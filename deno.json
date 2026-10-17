@@ -16,8 +16,8 @@
     "zod": "npm:zod@4.4.3",
     "sass": "npm:sass@^1.105.0",
     "@std/http/file-server": "jsr:@std/http@1/file-server",
-    "@iswc/component-schemas": "https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/previews/_kit/schemas/component.schemas.ts",
-    "@iswc/loader-schemas": "https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/cdn/schemas/loader.schemas.ts"
+    "@iswc/component-schemas": "https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/previews/_kit/schemas/component.schemas.ts",
+    "@iswc/loader-schemas": "https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/cdn/schemas/loader.schemas.ts"
   },
   "tasks": {
     "build:scss": "deno run -A scripts/build/build-scss.mjs",

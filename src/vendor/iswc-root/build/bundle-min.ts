@@ -1,4 +1,4 @@
-// @vendor iswc-root@c08f58a5a048a396b7eeca23cb222b267bdf8ac6+local dist/cdn/build/bundle-min.ts
+// @vendor iswc-root@027a9dfcc97abfb3b156470dc3e25a86115aeabd dist/cdn/build/bundle-min.ts
 // No editar: se cambia en el kit y se descarga con `deno task vendor:iswc`.
 /**
  * Generadores de .min.js / .min.css / loader.

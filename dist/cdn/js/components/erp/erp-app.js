@@ -1,4 +1,4 @@
-import{crearComponente as p,define as l,html as r}from"../../base/componente.js?v=6ij5d7";import{alCambiar as m,salir as d,sesion as u}from"../../dominio/sesion.js?v=wxs269";const e={hola:"erp-hola",login:"erp-login"},t=new Set;m(()=>{for(const s of t)s.isConnected?s.props={}:t.delete(s)});const g=p(import.meta.url,"erp-app",{vista:"hola"},(s,o,n)=>{t.add(n);const a=u(),i=a?o.vista!=="login"&&e[o.vista]?o.vista:"hola":"login",c=document.createElement(e[i]);s.append(r`
+import{crearComponente as p,define as l,html as r}from"../../base/componente.js?v=6ij5d7";import{alCambiar as m,salir as d,sesion as u}from"../../dominio/sesion.js?v=6m927q";const e={hola:"erp-hola",login:"erp-login"},t=new Set;m(()=>{for(const s of t)s.isConnected?s.props={}:t.delete(s)});const g=p(import.meta.url,"erp-app",{vista:"hola"},(s,o,n)=>{t.add(n);const a=u(),i=a?o.vista!=="login"&&e[o.vista]?o.vista:"hola":"login",c=document.createElement(e[i]);s.append(r`
     <header class="barra" part="barra">
       <strong class="marca">ERP SQLite</strong>
       <div class="acciones">

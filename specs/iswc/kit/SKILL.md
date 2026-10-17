@@ -1,4 +1,4 @@
-<!-- Copia de skills/iswc-root/SKILL.md del kit Jeff-Aporta/is-webcomponents@c08f58a5a048a396b7eeca23cb222b267bdf8ac6. No editar: se refresca con `deno task vendor:iswc`. -->
+<!-- Copia de skills/iswc-root/SKILL.md del kit Jeff-Aporta/is-webcomponents@027a9dfcc97abfb3b156470dc3e25a86115aeabd. No editar: se refresca con `deno task vendor:iswc`. -->
 ---
 name: iswc-root
 description: >-
@@ -21,7 +21,7 @@ Prompt completo, listo para copiar: [`PROMPT.md`](PROMPT.md).
 
 **Antes de escribir HTML/CSS/JS**, lee en orden:
 
-1. [`is-cdn-install/SKILL.md`](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/skills/is-cdn-install/SKILL.md) — bootstrap, espejos, pin SHA, fallback.
+1. [`is-cdn-install/SKILL.md`](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/skills/is-cdn-install/SKILL.md) — bootstrap, espejos, pin SHA, fallback.
 2. Este archivo — arquitectura, reglas de reuso y el índice de cada componente.
 3. La guía del módulo, enlazada en el catálogo de abajo.
 
@@ -39,13 +39,13 @@ Comandos tipo slash, uno por archivo en [`tools/`](tools/):
 ## Apps sobre el kit: estándar `iswc-foundation` (obligatorio)
 
 Toda **app** construida sobre iswc (no un componente del kit, una app: ISW, las nuevas)
-sigue la skill [`../iswc-foundation/SKILL.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/skills/iswc-foundation/SKILL.md): misma estructura, mismas
+sigue la skill [`../iswc-foundation/SKILL.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/027a9dfcc97abfb3b156470dc3e25a86115aeabd/skills/iswc-foundation/SKILL.md): misma estructura, mismas
 tareas Deno, registro único de tags, vistas, demos, SCSS, Zod, pines fijos, pruebas WHAT con
 Stagehand, gate y sync. Una app nueva se crea con `create-iswc-app`, que se ejecuta directo desde la
 URL (sin descargar nada):
 
 ```bash
-deno run -A --reload=https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/ https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/dist/cdn/skills/iswc-foundation/tools/create-iswc-app.mjs mi-app --prefijo=mia
+deno run -A --reload=https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/ https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/027a9dfcc97abfb3b156470dc3e25a86115aeabd/dist/cdn/skills/iswc-foundation/tools/create-iswc-app.mjs mi-app --prefijo=mia
 ```
 
 Deja el esqueleto completo con un hola mundo, el pin fijo, las specs y skills sembradas
@@ -55,7 +55,7 @@ Deja el esqueleto completo con un hola mundo, el pin fijo, las specs y skills se
 
 Cada guía de módulo (`src/components/<carpeta>/<modulo>.md`) sigue la
 misma plantilla para que el catálogo y los agentes la lean igual. La
-skill [`../document-component/SKILL.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/skills/document-component/SKILL.md)
+skill [`../document-component/SKILL.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/027a9dfcc97abfb3b156470dc3e25a86115aeabd/skills/document-component/SKILL.md)
 detalla la estructura obligatoria (anatomía, atributos observados,
 props, custom states, eventos, slots, CSS parts, ejemplos), las
 convenciones de tono, el formato de tablas y los enlaces cruzados que
@@ -63,11 +63,11 @@ cada ficha debe llevar.
 
 | Recurso | Ruta |
 | --- | --- |
-| Skill | [`../document-component/SKILL.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/skills/document-component/SKILL.md) |
-| Anatomía y frontmatter | [`../document-component/references/anatomy-section.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/skills/document-component/references/anatomy-section.md) |
-| Custom states | [`../document-component/references/custom-states.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/skills/document-component/references/custom-states.md) |
-| Bloques de código | [`../document-component/references/code-blocks.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/skills/document-component/references/code-blocks.md) |
-| Estilo visual | [`../document-component/references/visual-style.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/skills/document-component/references/visual-style.md) |
+| Skill | [`../document-component/SKILL.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/027a9dfcc97abfb3b156470dc3e25a86115aeabd/skills/document-component/SKILL.md) |
+| Anatomía y frontmatter | [`../document-component/references/anatomy-section.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/027a9dfcc97abfb3b156470dc3e25a86115aeabd/skills/document-component/references/anatomy-section.md) |
+| Custom states | [`../document-component/references/custom-states.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/027a9dfcc97abfb3b156470dc3e25a86115aeabd/skills/document-component/references/custom-states.md) |
+| Bloques de código | [`../document-component/references/code-blocks.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/027a9dfcc97abfb3b156470dc3e25a86115aeabd/skills/document-component/references/code-blocks.md) |
+| Estilo visual | [`../document-component/references/visual-style.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/027a9dfcc97abfb3b156470dc3e25a86115aeabd/skills/document-component/references/visual-style.md) |
 
 ## Enlaces (GitHub primero, raw como secundario)
 
@@ -76,11 +76,11 @@ Usa `raw.githubusercontent.com` solo para lectura como `text/plain` puro.
 
 | Recurso | GitHub | raw (texto plano) |
 | --- | --- | --- |
-| Prompt LLM | [PROMPT.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/skills/iswc-root/PROMPT.md) | [raw](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/skills/iswc-root/PROMPT.md) |
-| Esta skill | [SKILL.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/skills/iswc-root/SKILL.md) | [raw](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/skills/iswc-root/SKILL.md) |
-| Skill instalación CDN | [SKILL.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/skills/is-cdn-install/SKILL.md) | [raw](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/skills/is-cdn-install/SKILL.md) |
-| Herramientas | [tools/](https://github.com/Jeff-Aporta/is-webcomponents/tree/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/skills/iswc-root/tools) | — |
-| Catálogo de producto | [componentes.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/specs/componentes.md) | [raw](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/specs/componentes.md) |
+| Prompt LLM | [PROMPT.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/skills/iswc-root/PROMPT.md) | [raw](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/027a9dfcc97abfb3b156470dc3e25a86115aeabd/skills/iswc-root/PROMPT.md) |
+| Esta skill | [SKILL.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/skills/iswc-root/SKILL.md) | [raw](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/027a9dfcc97abfb3b156470dc3e25a86115aeabd/skills/iswc-root/SKILL.md) |
+| Skill instalación CDN | [SKILL.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/skills/is-cdn-install/SKILL.md) | [raw](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/027a9dfcc97abfb3b156470dc3e25a86115aeabd/skills/is-cdn-install/SKILL.md) |
+| Herramientas | [tools/](https://github.com/Jeff-Aporta/is-webcomponents/tree/027a9dfcc97abfb3b156470dc3e25a86115aeabd/skills/iswc-root/tools) | — |
+| Catálogo de producto | [componentes.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/specs/componentes.md) | [raw](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/027a9dfcc97abfb3b156470dc3e25a86115aeabd/specs/componentes.md) |
 
 Local: `dist/cdn/skills/<name>/SKILL.md` vía jsDelivr o Pages una vez la app ya arranca desde ahí.
 
@@ -126,7 +126,7 @@ Cada diagrama tiene visor y editor como app, con el mismo parámetro.
 
 `json` es el documento completo del diagrama en base64url. Se lee al abrir. Editar no reescribe la dirección: **Compartir** copia un enlace nuevo con el JSON resultante, y **Recuperar JSON** devuelve el documento actual. El editor visual dedicado hoy es `<iswc-er-editor>`; el resto se edita con el JSON en vivo sobre el visor del mismo `kind`.
 
-Guía: [`diagram-studio.md`](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/diagrams/utils/diagram-studio.md).
+Guía: [`diagram-studio.md`](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/diagrams/utils/diagram-studio.md).
 
 ## Bootstrap CDN (apps consumidoras)
 
@@ -177,7 +177,7 @@ Tras vaciar el shadow, vuelve a llamar `adoptCss` (los `<link>` se borran con el
 
 `IswcUi.css(shadow, cssText)` queda solo para prototipos sin archivo hermano.
 
-Docs: [helpers/ui.md](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/helpers/ui.md).
+Docs: [helpers/ui.md](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/ui.md).
 
 ## Prohibido / eliminado
 
@@ -192,7 +192,7 @@ Docs: [helpers/ui.md](https://raw.githubusercontent.com/Jeff-Aporta/is-webcompon
 2. Guía del módulo: `src/components/<carpeta>/<modulo>.md`.
 3. Si la API no está en la guía, no inventarla. La fuente solo confirma el contrato escrito.
 
-Base raw: `https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/`
+Base raw: `https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/`
 
 ## Convenciones al componer
 
@@ -223,7 +223,7 @@ Base raw: `https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/c08f58
 
 ## Kit: carta de leyes
 
-Antes de cambiar el repo del kit, leer [`specs/lessons.md`](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/specs/lessons.md). Guardianes: `node tests/llm-contract.test.ts` y el resto de `tests/*.test.mjs`.
+Antes de cambiar el repo del kit, leer [`specs/lessons.md`](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/specs/lessons.md). Guardianes: `node tests/llm-contract.test.ts` y el resto de `tests/*.test.mjs`.
 
 ## Checklist pre-entrega
 
@@ -254,14 +254,14 @@ Detalle operativo: [`tools/runtime.md`](tools/runtime.md).
 
 | API / módulo | CDN o ruta | Resumen | Guía |
 | --- | --- | --- | --- |
-| `iswcLoader` | `core/loader.min.js` | Entry CDN: loadCSS*, load/ensure/has, pin, configure, espejos jsDelivr -> githack -> Pages, sheets, registerApp, SHA quemado. | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/cdn/loader.md) |
-| `IswcUi / Ui` | `helpers/ui.min.js` | html, adoptCss, define, css, el: primitivas de apps dominio. No es CE. | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/helpers/ui.md) |
-| `mdToHtml` | `helpers/md-lite.min.js` | Markdown -> HTML sin npm; fences codigo e iswc-* (diagramas). | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/helpers/utils/md-lite.md) |
-| `resolveIswcFenceTag` | `helpers/md-iswc-fences.min.js` | Lang fence iswc-* -> tag de diagrama (flowchart, er, sequence, ...). | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/helpers/utils/md-iswc-fences.md) |
-| `hydrateMdEmbeds` | `helpers/md-hydrate.min.js` | Carga perezosa de los iswc-* que pusieron los renders por defecto del markdown. | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/helpers/utils/md-hydrate.md) |
-| `md-editor-api` | `helpers/md-editor-api.min.js` | CRUD/normalizacion para iswc-md-editor (endpoints, fieldMap, token). | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/helpers/utils/md-editor-api.md) |
-| `IswcResponseCache` | `helpers/response-cache.min.js` | SWR IndexedDB: vivo/leer/guardar/invalidar; no bloquea el pintado. | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/helpers/utils/response-cache.md) |
-| `sync-pins` | `scripts/sync-pins.mjs (repo)` | Tras commit del kit: propaga SHA a kit-pin / ISS / PIN (deno task sync:pins). | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/scripts/sync-pins.mjs) |
+| `iswcLoader` | `core/loader.min.js` | Entry CDN: loadCSS*, load/ensure/has, pin, configure, espejos jsDelivr -> githack -> Pages, sheets, registerApp, SHA quemado. | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/cdn/loader.md) |
+| `IswcUi / Ui` | `helpers/ui.min.js` | html, adoptCss, define, css, el: primitivas de apps dominio. No es CE. | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/ui.md) |
+| `mdToHtml` | `helpers/md-lite.min.js` | Markdown -> HTML sin npm; fences codigo e iswc-* (diagramas). | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/utils/md-lite.md) |
+| `resolveIswcFenceTag` | `helpers/md-iswc-fences.min.js` | Lang fence iswc-* -> tag de diagrama (flowchart, er, sequence, ...). | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/utils/md-iswc-fences.md) |
+| `hydrateMdEmbeds` | `helpers/md-hydrate.min.js` | Carga perezosa de los iswc-* que pusieron los renders por defecto del markdown. | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/utils/md-hydrate.md) |
+| `md-editor-api` | `helpers/md-editor-api.min.js` | CRUD/normalizacion para iswc-md-editor (endpoints, fieldMap, token). | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/utils/md-editor-api.md) |
+| `IswcResponseCache` | `helpers/response-cache.min.js` | SWR IndexedDB: vivo/leer/guardar/invalidar; no bloquea el pintado. | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/utils/response-cache.md) |
+| `sync-pins` | `scripts/sync-pins.mjs (repo)` | Tras commit del kit: propaga SHA a kit-pin / ISS / PIN (deno task sync:pins). | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/scripts/sync-pins.mjs) |
 
 <!-- apis:fin -->
 
@@ -279,16 +279,16 @@ el contrato), sigue la skill paralela:
 
 | Skill | Cuándo |
 | --- | --- |
-| [`build-component/SKILL.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/skills/build-component/SKILL.md) | Anatomía obligatoria del `.md`, custom states (`StateMachine`), CSS parts y slots, atributos observados vs propiedades, tokens `--iswc-*`, accesibilidad, tests con `node:test` + `assert/strict`, demo en `demos/<cat>/<comp>/<comp>.html`. |
+| [`build-component/SKILL.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/027a9dfcc97abfb3b156470dc3e25a86115aeabd/skills/build-component/SKILL.md) | Anatomía obligatoria del `.md`, custom states (`StateMachine`), CSS parts y slots, atributos observados vs propiedades, tokens `--iswc-*`, accesibilidad, tests con `node:test` + `assert/strict`, demo en `demos/<cat>/<comp>/<comp>.html`. |
 
 Sub-guías de la skill:
 
-- [`references/lifecycle.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/skills/build-component/references/lifecycle.md) — Hooks de `ElementBase`, shadow, upgrade de propiedades, form-associated, cleanup.
-- [`references/states.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/skills/build-component/references/states.md) — Custom states, `setCustomState`, fallback `data-state-*`.
-- [`references/parts-slots.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/skills/build-component/references/parts-slots.md) — `part="..."`, slots semánticos, `:slotted(...)`.
-- [`references/props-events.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/skills/build-component/references/props-events.md) — Atributos observados, propiedades, eventos `iswc-*` con `composed: true`.
-- [`references/css-tokens.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/skills/build-component/references/css-tokens.md) — Tokens `--iswc-*`, temas, paletas, `static styleAttrs`.
-- [`references/accessibility.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/skills/build-component/references/accessibility.md) — Semántica, foco, teclado, ARIA, focus management, modales.
+- [`references/lifecycle.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/027a9dfcc97abfb3b156470dc3e25a86115aeabd/skills/build-component/references/lifecycle.md) — Hooks de `ElementBase`, shadow, upgrade de propiedades, form-associated, cleanup.
+- [`references/states.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/027a9dfcc97abfb3b156470dc3e25a86115aeabd/skills/build-component/references/states.md) — Custom states, `setCustomState`, fallback `data-state-*`.
+- [`references/parts-slots.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/027a9dfcc97abfb3b156470dc3e25a86115aeabd/skills/build-component/references/parts-slots.md) — `part="..."`, slots semánticos, `:slotted(...)`.
+- [`references/props-events.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/027a9dfcc97abfb3b156470dc3e25a86115aeabd/skills/build-component/references/props-events.md) — Atributos observados, propiedades, eventos `iswc-*` con `composed: true`.
+- [`references/css-tokens.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/027a9dfcc97abfb3b156470dc3e25a86115aeabd/skills/build-component/references/css-tokens.md) — Tokens `--iswc-*`, temas, paletas, `static styleAttrs`.
+- [`references/accessibility.md`](https://raw.githubusercontent.com/Jeff-Aporta/is-webcomponents/027a9dfcc97abfb3b156470dc3e25a86115aeabd/skills/build-component/references/accessibility.md) — Semántica, foco, teclado, ARIA, focus management, modales.
 
 ## Catálogo de componentes
 
@@ -302,278 +302,278 @@ Cada `.min.js` enlaza la guía de su fila y esta skill.
 
 | Tag | Resumen | Guía |
 | --- | --- | --- |
-| `<iswc-accordion-group>` | isp/accordion-group.md | [isp/accordion-group.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/isp/accordion-group.md) |
-| `<iswc-block-layout>` | isp/block-layout.md | [isp/block-layout.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/isp/block-layout.md) |
-| `<iswc-btn-ref>` | isp/btn-ref.md | [isp/btn-ref.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/isp/btn-ref.md) |
-| `<iswc-catalogo-gen>` | isp/catalogo-gen.md | [isp/catalogo-gen.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/isp/catalogo-gen.md) |
-| `<iswc-confirm-delete>` | isp/confirm-delete.md | [isp/confirm-delete.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/isp/confirm-delete.md) |
-| `<iswc-flex-layout>` | isp/flex-layout.md | [isp/flex-layout.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/isp/flex-layout.md) |
-| `<iswc-flex-options>` | isp/flex-options.md | [isp/flex-options.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/isp/flex-options.md) |
-| `<iswc-float-card>` | isp/float-card.md | [isp/float-card.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/isp/float-card.md) |
-| `<iswc-form>` | isp/form.md | [isp/form.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/isp/form.md) |
-| `<iswc-modal-verificacion>` | isp/modal-verificacion.md | [isp/modal-verificacion.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/isp/modal-verificacion.md) |
-| `<iswc-grid-layout>` | isp/grid-layout.md | [isp/grid-layout.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/isp/grid-layout.md) |
-| `<iswc-heading>` | isp/heading.md | [isp/heading.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/isp/heading.md) |
-| `<iswc-loading-overlay>` | isp/loading-overlay.md | [isp/loading-overlay.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/isp/loading-overlay.md) |
-| `<iswc-text>` | isp/text.md | [isp/text.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/isp/text.md) |
-| `<iswc-tree-view>` | isp/tree-view.md | [isp/tree-view.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/isp/tree-view.md) |
+| `<iswc-accordion-group>` | isp/accordion-group.md | [isp/accordion-group.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/isp/accordion-group.md) |
+| `<iswc-block-layout>` | isp/block-layout.md | [isp/block-layout.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/isp/block-layout.md) |
+| `<iswc-btn-ref>` | isp/btn-ref.md | [isp/btn-ref.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/isp/btn-ref.md) |
+| `<iswc-catalogo-gen>` | isp/catalogo-gen.md | [isp/catalogo-gen.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/isp/catalogo-gen.md) |
+| `<iswc-confirm-delete>` | isp/confirm-delete.md | [isp/confirm-delete.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/isp/confirm-delete.md) |
+| `<iswc-flex-layout>` | isp/flex-layout.md | [isp/flex-layout.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/isp/flex-layout.md) |
+| `<iswc-flex-options>` | isp/flex-options.md | [isp/flex-options.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/isp/flex-options.md) |
+| `<iswc-float-card>` | isp/float-card.md | [isp/float-card.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/isp/float-card.md) |
+| `<iswc-form>` | isp/form.md | [isp/form.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/isp/form.md) |
+| `<iswc-modal-verificacion>` | isp/modal-verificacion.md | [isp/modal-verificacion.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/isp/modal-verificacion.md) |
+| `<iswc-grid-layout>` | isp/grid-layout.md | [isp/grid-layout.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/isp/grid-layout.md) |
+| `<iswc-heading>` | isp/heading.md | [isp/heading.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/isp/heading.md) |
+| `<iswc-loading-overlay>` | isp/loading-overlay.md | [isp/loading-overlay.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/isp/loading-overlay.md) |
+| `<iswc-text>` | isp/text.md | [isp/text.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/isp/text.md) |
+| `<iswc-tree-view>` | isp/tree-view.md | [isp/tree-view.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/isp/tree-view.md) |
 
 ### actions
 
 | Tag | Resumen | Guía |
 | --- | --- | --- |
-| `<iswc-button>` | actions/button.md | [actions/button.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/actions/button.md) |
-| `<iswc-button-group>` | actions/button-group.md | [actions/button-group.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/actions/button-group.md) |
-| `<iswc-copy-button>` | actions/copy-button.md | [actions/copy-button.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/actions/copy-button.md) |
-| `<iswc-share-button>` | actions/share-button.md | [actions/share-button.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/actions/share-button.md) |
-| `<iswc-check-icon-button>` | actions/check-icon-button.md | [actions/check-icon-button.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/actions/check-icon-button.md) |
-| `<iswc-dropdown>` | actions/dropdown.md | [actions/dropdown.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/actions/dropdown.md) |
-| `<iswc-dropdown-item>` | actions/dropdown-item.md | [actions/dropdown-item.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/actions/dropdown-item.md) |
-| `<iswc-fab>` | actions/fab.md | [actions/fab.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/actions/fab.md) |
-| `<iswc-context-menu>` | actions/context-menu.md | [actions/context-menu.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/actions/context-menu.md) |
-| `<iswc-speed-dial>` | actions/speed-dial.md | [actions/speed-dial.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/actions/speed-dial.md) |
-| `<iswc-speed-dial-action>` | Acción hija de <iswc-speed-dial>. | [actions/speed-dial-action.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/actions/speed-dial-action.md) |
+| `<iswc-button>` | actions/button.md | [actions/button.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/actions/button.md) |
+| `<iswc-button-group>` | actions/button-group.md | [actions/button-group.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/actions/button-group.md) |
+| `<iswc-copy-button>` | actions/copy-button.md | [actions/copy-button.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/actions/copy-button.md) |
+| `<iswc-share-button>` | actions/share-button.md | [actions/share-button.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/actions/share-button.md) |
+| `<iswc-check-icon-button>` | actions/check-icon-button.md | [actions/check-icon-button.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/actions/check-icon-button.md) |
+| `<iswc-dropdown>` | actions/dropdown.md | [actions/dropdown.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/actions/dropdown.md) |
+| `<iswc-dropdown-item>` | actions/dropdown-item.md | [actions/dropdown-item.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/actions/dropdown-item.md) |
+| `<iswc-fab>` | actions/fab.md | [actions/fab.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/actions/fab.md) |
+| `<iswc-context-menu>` | actions/context-menu.md | [actions/context-menu.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/actions/context-menu.md) |
+| `<iswc-speed-dial>` | actions/speed-dial.md | [actions/speed-dial.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/actions/speed-dial.md) |
+| `<iswc-speed-dial-action>` | Acción hija de <iswc-speed-dial>. | [actions/speed-dial-action.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/actions/speed-dial-action.md) |
 
 ### media
 
 | Tag | Resumen | Guía |
 | --- | --- | --- |
-| `<iswc-icon>` | Iconos, identidad visual y reproducción de video. | [media/icon.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/media/icon.md) |
-| `<iswc-avatar>` | media/avatar.md | [media/avatar.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/media/avatar.md) |
-| `<iswc-theme-img>` | media/theme-img.md | [media/theme-img.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/media/theme-img.md) |
-| `<iswc-figure>` | Figura de contenido: una imagen (con variante dark/light opcional), su pie y, si se pide, un enlace «abrir en una pestaña nueva». | [media/figure.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/media/figure.md) |
-| `<iswc-video>` | media/video.md | [media/video.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/media/video.md) |
-| `<iswc-speech>` | media/speech.md | [media/speech.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/media/speech.md) |
-| `<iswc-media-recorder>` | media/media-recorder.md | [media/media-recorder.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/media/media-recorder.md) |
-| `<iswc-video-playlist>` | media/video-playlist.md | [media/video-playlist.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/media/video-playlist.md) |
-| `<iswc-barcode>` | media/barcode.md | [media/barcode.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/media/barcode.md) |
-| `<iswc-barcode-scanner>` | media/barcode-scanner.md | [media/barcode-scanner.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/media/barcode-scanner.md) |
-| `<iswc-image-editor>` | media/image-editor.md | [media/image-editor.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/media/image-editor.md) |
+| `<iswc-icon>` | Iconos, identidad visual y reproducción de video. | [media/icon.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/media/icon.md) |
+| `<iswc-avatar>` | media/avatar.md | [media/avatar.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/media/avatar.md) |
+| `<iswc-theme-img>` | media/theme-img.md | [media/theme-img.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/media/theme-img.md) |
+| `<iswc-figure>` | Figura de contenido: una imagen (con variante dark/light opcional), su pie y, si se pide, un enlace «abrir en una pestaña nueva». | [media/figure.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/media/figure.md) |
+| `<iswc-video>` | media/video.md | [media/video.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/media/video.md) |
+| `<iswc-speech>` | media/speech.md | [media/speech.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/media/speech.md) |
+| `<iswc-media-recorder>` | media/media-recorder.md | [media/media-recorder.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/media/media-recorder.md) |
+| `<iswc-video-playlist>` | media/video-playlist.md | [media/video-playlist.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/media/video-playlist.md) |
+| `<iswc-barcode>` | media/barcode.md | [media/barcode.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/media/barcode.md) |
+| `<iswc-barcode-scanner>` | media/barcode-scanner.md | [media/barcode-scanner.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/media/barcode-scanner.md) |
+| `<iswc-image-editor>` | media/image-editor.md | [media/image-editor.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/media/image-editor.md) |
 | `<iswc-icon-explorer>` | Ver la guía del módulo antes de crear otro control. | — |
-| `<iswc-qrcode>` | media/qrcode.md | [media/qrcode.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/media/qrcode.md) |
+| `<iswc-qrcode>` | media/qrcode.md | [media/qrcode.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/media/qrcode.md) |
 
 ### feedback
 
 | Tag | Resumen | Guía |
 | --- | --- | --- |
-| `<iswc-spinner>` | feedback/spinner.md | [feedback/spinner.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/feedback/spinner.md) |
-| `<iswc-badge>` | feedback/badge.md | [feedback/badge.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/feedback/badge.md) |
-| `<iswc-tag>` | feedback/tag.md | [feedback/tag.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/feedback/tag.md) |
-| `<iswc-skeleton>` | feedback/skeleton.md | [feedback/skeleton.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/feedback/skeleton.md) |
-| `<iswc-progress-bar>` | feedback/progress-bar.md | [feedback/progress-bar.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/feedback/progress-bar.md) |
-| `<iswc-progress-ring>` | feedback/progress-ring.md | [feedback/progress-ring.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/feedback/progress-ring.md) |
-| `<iswc-theme-toggle>` | feedback/theme-toggle.md | [feedback/theme-toggle.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/feedback/theme-toggle.md) |
-| `<iswc-prefs-clear>` | feedback/prefs-clear.md | [feedback/prefs-clear.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/feedback/prefs-clear.md) |
-| `<iswc-toast>` | feedback/toast.md | [feedback/toast.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/feedback/toast.md) |
-| `<iswc-toast-item>` | feedback/toast-item.md | [feedback/toast-item.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/feedback/toast-item.md) |
-| `<iswc-tooltip>` | feedback/tooltip.md | [feedback/tooltip.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/feedback/tooltip.md) |
-| `<iswc-cdn-snippet>` | feedback/cdn-snippet.md | [feedback/cdn-snippet.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/feedback/cdn-snippet.md) |
-| `<iswc-popconfirm>` | feedback/popconfirm.md | [feedback/popconfirm.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/feedback/popconfirm.md) |
-| `<iswc-confirm-modal>` | feedback/confirm-modal.md | [feedback/confirm-modal.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/feedback/confirm-modal.md) |
-| `<iswc-palette-selector>` | feedback/palette-selector.md | [feedback/palette-selector.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/feedback/palette-selector.md) |
+| `<iswc-spinner>` | feedback/spinner.md | [feedback/spinner.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/feedback/spinner.md) |
+| `<iswc-badge>` | feedback/badge.md | [feedback/badge.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/feedback/badge.md) |
+| `<iswc-tag>` | feedback/tag.md | [feedback/tag.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/feedback/tag.md) |
+| `<iswc-skeleton>` | feedback/skeleton.md | [feedback/skeleton.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/feedback/skeleton.md) |
+| `<iswc-progress-bar>` | feedback/progress-bar.md | [feedback/progress-bar.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/feedback/progress-bar.md) |
+| `<iswc-progress-ring>` | feedback/progress-ring.md | [feedback/progress-ring.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/feedback/progress-ring.md) |
+| `<iswc-theme-toggle>` | feedback/theme-toggle.md | [feedback/theme-toggle.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/feedback/theme-toggle.md) |
+| `<iswc-prefs-clear>` | feedback/prefs-clear.md | [feedback/prefs-clear.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/feedback/prefs-clear.md) |
+| `<iswc-toast>` | feedback/toast.md | [feedback/toast.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/feedback/toast.md) |
+| `<iswc-toast-item>` | feedback/toast-item.md | [feedback/toast-item.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/feedback/toast-item.md) |
+| `<iswc-tooltip>` | feedback/tooltip.md | [feedback/tooltip.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/feedback/tooltip.md) |
+| `<iswc-cdn-snippet>` | feedback/cdn-snippet.md | [feedback/cdn-snippet.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/feedback/cdn-snippet.md) |
+| `<iswc-popconfirm>` | feedback/popconfirm.md | [feedback/popconfirm.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/feedback/popconfirm.md) |
+| `<iswc-confirm-modal>` | feedback/confirm-modal.md | [feedback/confirm-modal.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/feedback/confirm-modal.md) |
+| `<iswc-palette-selector>` | feedback/palette-selector.md | [feedback/palette-selector.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/feedback/palette-selector.md) |
 
 ### layout
 
 | Tag | Resumen | Guía |
 | --- | --- | --- |
-| `<iswc-split-panel>` | layout/split-panel.md | [layout/split-panel.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/layout/split-panel.md) |
-| `<iswc-main>` | layout/main.md | [layout/main.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/layout/main.md) |
-| `<iswc-card>` | layout/card.md | [layout/card.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/layout/card.md) |
-| `<iswc-callout>` | layout/callout.md | [layout/callout.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/layout/callout.md) |
-| `<iswc-details>` | layout/details.md | [layout/details.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/layout/details.md) |
-| `<iswc-dialog>` | layout/dialog.md | [layout/dialog.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/layout/dialog.md) |
-| `<iswc-drawer>` | layout/drawer.md | [layout/drawer.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/layout/drawer.md) |
-| `<iswc-divider>` | layout/divider.md | [layout/divider.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/layout/divider.md) |
-| `<iswc-scrollspy>` | layout/scrollspy.md | [layout/scrollspy.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/layout/scrollspy.md) |
-| `<iswc-demo>` | Caja de demostración de la galería. | [layout/demo.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/layout/demo.md) |
-| `<iswc-dock>` | layout/dock.md | [layout/dock.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/layout/dock.md) |
-| `<iswc-dock-item>` | Ítem de <iswc-dock>. | [layout/dock-item.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/layout/dock-item.md) |
-| `<iswc-doc-layout>` | Layout documental común: navegación a la izquierda, contenido al centro e índice de la página a la derecha, con scroll-spy entre ambos. | [layout/doc-layout.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/layout/doc-layout.md) |
-| `<iswc-md-docs-vault>` | Lector de una documentación modular (norma documentacion-modular) como un libro: cada .md es una hoja, el README es la portada y se navega con índice, búsqueda, paso anterior/siguiente y enlaces compartibles. | [layout/md-docs-vault.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/layout/md-docs-vault.md) |
-| `<iswc-server-api-docs>` | Expone los endpoints de la API de un server al estilo Swagger (solo para servers: el ISS la sirve en GET /api/docs). | [layout/server-api-docs.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/layout/server-api-docs.md) |
+| `<iswc-split-panel>` | layout/split-panel.md | [layout/split-panel.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/layout/split-panel.md) |
+| `<iswc-main>` | layout/main.md | [layout/main.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/layout/main.md) |
+| `<iswc-card>` | layout/card.md | [layout/card.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/layout/card.md) |
+| `<iswc-callout>` | layout/callout.md | [layout/callout.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/layout/callout.md) |
+| `<iswc-details>` | layout/details.md | [layout/details.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/layout/details.md) |
+| `<iswc-dialog>` | layout/dialog.md | [layout/dialog.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/layout/dialog.md) |
+| `<iswc-drawer>` | layout/drawer.md | [layout/drawer.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/layout/drawer.md) |
+| `<iswc-divider>` | layout/divider.md | [layout/divider.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/layout/divider.md) |
+| `<iswc-scrollspy>` | layout/scrollspy.md | [layout/scrollspy.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/layout/scrollspy.md) |
+| `<iswc-demo>` | Caja de demostración de la galería. | [layout/demo.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/layout/demo.md) |
+| `<iswc-dock>` | layout/dock.md | [layout/dock.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/layout/dock.md) |
+| `<iswc-dock-item>` | Ítem de <iswc-dock>. | [layout/dock-item.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/layout/dock-item.md) |
+| `<iswc-doc-layout>` | Layout documental común: navegación a la izquierda, contenido al centro e índice de la página a la derecha, con scroll-spy entre ambos. | [layout/doc-layout.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/layout/doc-layout.md) |
+| `<iswc-md-docs-vault>` | Lector de una documentación modular (norma documentacion-modular) como un libro: cada .md es una hoja, el README es la portada y se navega con índice, búsqueda, paso anterior/siguiente y enlaces compartibles. | [layout/md-docs-vault.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/layout/md-docs-vault.md) |
+| `<iswc-server-api-docs>` | Expone los endpoints de la API de un server al estilo Swagger (solo para servers: el ISS la sirve en GET /api/docs). | [layout/server-api-docs.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/layout/server-api-docs.md) |
 
 ### helpers
 
 | Tag | Resumen | Guía |
 | --- | --- | --- |
-| `<iswc-popover>` | Formato, observación y posicionamiento reutilizable sobre APIs nativas. | [helpers/popover.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/helpers/popover.md) |
-| `<iswc-ui>` | helpers/ui.md | [helpers/ui.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/helpers/ui.md) |
-| `<iswc-lightbox>` | diagrams/lightbox.md | [diagrams/lightbox.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/diagrams/lightbox.md) |
-| `<iswc-relative-time>` | helpers/relative-time.md | [helpers/relative-time.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/helpers/relative-time.md) |
-| `<iswc-format>` | helpers/format.md | [helpers/format.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/helpers/format.md) |
-| `<iswc-observer>` | helpers/observer.md | [helpers/observer.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/helpers/observer.md) |
-| `<iswc-wake-lock>` | helpers/wake-lock.md | [helpers/wake-lock.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/helpers/wake-lock.md) |
-| `<iswc-offscreen-canvas>` | helpers/offscreen-canvas.md | [helpers/offscreen-canvas.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/helpers/offscreen-canvas.md) |
-| `<iswc-format-date>` | helpers/format-date.md | [helpers/format-date.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/helpers/format-date.md) |
-| `<iswc-format-number>` | helpers/format-number.md | [helpers/format-number.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/helpers/format-number.md) |
-| `<iswc-format-bytes>` | helpers/format-bytes.md | [helpers/format-bytes.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/helpers/format-bytes.md) |
-| `<iswc-intersection-observer>` | helpers/intersection-observer.md | [helpers/intersection-observer.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/helpers/intersection-observer.md) |
-| `<iswc-mutation-observer>` | helpers/mutation-observer.md | [helpers/mutation-observer.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/helpers/mutation-observer.md) |
-| `<iswc-resize-observer>` | helpers/resize-observer.md | [helpers/resize-observer.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/helpers/resize-observer.md) |
-| `<iswc-md-render>` | helpers/md-render.md | [helpers/md-render.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/helpers/md-render.md) |
-| `<iswc-md-editor>` | helpers/md-editor.md | [helpers/md-editor.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/helpers/md-editor.md) |
-| `<iswc-floating>` | helpers/floating.md | [helpers/floating.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/helpers/floating.md) |
+| `<iswc-popover>` | Formato, observación y posicionamiento reutilizable sobre APIs nativas. | [helpers/popover.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/popover.md) |
+| `<iswc-ui>` | helpers/ui.md | [helpers/ui.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/ui.md) |
+| `<iswc-lightbox>` | diagrams/lightbox.md | [diagrams/lightbox.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/diagrams/lightbox.md) |
+| `<iswc-relative-time>` | helpers/relative-time.md | [helpers/relative-time.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/relative-time.md) |
+| `<iswc-format>` | helpers/format.md | [helpers/format.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/format.md) |
+| `<iswc-observer>` | helpers/observer.md | [helpers/observer.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/observer.md) |
+| `<iswc-wake-lock>` | helpers/wake-lock.md | [helpers/wake-lock.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/wake-lock.md) |
+| `<iswc-offscreen-canvas>` | helpers/offscreen-canvas.md | [helpers/offscreen-canvas.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/offscreen-canvas.md) |
+| `<iswc-format-date>` | helpers/format-date.md | [helpers/format-date.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/format-date.md) |
+| `<iswc-format-number>` | helpers/format-number.md | [helpers/format-number.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/format-number.md) |
+| `<iswc-format-bytes>` | helpers/format-bytes.md | [helpers/format-bytes.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/format-bytes.md) |
+| `<iswc-intersection-observer>` | helpers/intersection-observer.md | [helpers/intersection-observer.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/intersection-observer.md) |
+| `<iswc-mutation-observer>` | helpers/mutation-observer.md | [helpers/mutation-observer.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/mutation-observer.md) |
+| `<iswc-resize-observer>` | helpers/resize-observer.md | [helpers/resize-observer.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/resize-observer.md) |
+| `<iswc-md-render>` | helpers/md-render.md | [helpers/md-render.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/md-render.md) |
+| `<iswc-md-editor>` | helpers/md-editor.md | [helpers/md-editor.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/md-editor.md) |
+| `<iswc-floating>` | helpers/floating.md | [helpers/floating.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/floating.md) |
 
 ### navigation
 
 | Tag | Resumen | Guía |
 | --- | --- | --- |
-| `<iswc-breadcrumb>` | navigation/breadcrumb.md | [navigation/breadcrumb.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/navigation/breadcrumb.md) |
-| `<iswc-pager>` | Paso a la página anterior y a la siguiente, cada lado con un rótulo pequeño («← Anterior», «Siguiente →») y el título de la otra página. | [navigation/pager.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/navigation/pager.md) |
-| `<iswc-doc-index>` | Índice documental con búsqueda: lista páginas agrupadas (grupo → subgrupo → ítem) y, al escribir, busca en títulos, palabras clave y todo el texto, con los resultados por relevancia y el fragmento resaltado. | [navigation/doc-index.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/navigation/doc-index.md) |
-| `<iswc-breadcrumb-item>` | navigation/breadcrumb-item.md | [navigation/breadcrumb-item.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/navigation/breadcrumb-item.md) |
-| `<iswc-tab-group>` | navigation/tab-group.md | [navigation/tab-group.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/navigation/tab-group.md) |
-| `<iswc-tab>` | navigation/tab-group.md | [navigation/tab-group.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/navigation/tab-group.md) |
-| `<iswc-tab-panel>` | navigation/tab-group.md | [navigation/tab-group.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/navigation/tab-group.md) |
-| `<iswc-scroller>` | navigation/scroller.md | [navigation/scroller.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/navigation/scroller.md) |
-| `<iswc-carousel>` | navigation/carousel.md | [navigation/carousel.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/navigation/carousel.md) |
-| `<iswc-carousel-item>` | Lámina de <iswc-carousel>. | [navigation/carousel-item.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/navigation/carousel-item.md) |
-| `<iswc-tree>` | navigation/tree.md | [navigation/tree.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/navigation/tree.md) |
-| `<iswc-tree-item>` | Nodo de <iswc-tree>. | [navigation/tree-item.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/navigation/tree-item.md) |
-| `<iswc-stepper>` | navigation/stepper.md | [navigation/stepper.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/navigation/stepper.md) |
-| `<iswc-stepper-step>` | Paso de <iswc-stepper>. | [navigation/stepper-step.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/navigation/stepper-step.md) |
-| `<iswc-mega-menu>` | navigation/mega-menu.md | [navigation/mega-menu.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/navigation/mega-menu.md) |
+| `<iswc-breadcrumb>` | navigation/breadcrumb.md | [navigation/breadcrumb.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/navigation/breadcrumb.md) |
+| `<iswc-pager>` | Paso a la página anterior y a la siguiente, cada lado con un rótulo pequeño («← Anterior», «Siguiente →») y el título de la otra página. | [navigation/pager.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/navigation/pager.md) |
+| `<iswc-doc-index>` | Índice documental con búsqueda: lista páginas agrupadas (grupo → subgrupo → ítem) y, al escribir, busca en títulos, palabras clave y todo el texto, con los resultados por relevancia y el fragmento resaltado. | [navigation/doc-index.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/navigation/doc-index.md) |
+| `<iswc-breadcrumb-item>` | navigation/breadcrumb-item.md | [navigation/breadcrumb-item.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/navigation/breadcrumb-item.md) |
+| `<iswc-tab-group>` | navigation/tab-group.md | [navigation/tab-group.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/navigation/tab-group.md) |
+| `<iswc-tab>` | navigation/tab-group.md | [navigation/tab-group.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/navigation/tab-group.md) |
+| `<iswc-tab-panel>` | navigation/tab-group.md | [navigation/tab-group.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/navigation/tab-group.md) |
+| `<iswc-scroller>` | navigation/scroller.md | [navigation/scroller.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/navigation/scroller.md) |
+| `<iswc-carousel>` | navigation/carousel.md | [navigation/carousel.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/navigation/carousel.md) |
+| `<iswc-carousel-item>` | Lámina de <iswc-carousel>. | [navigation/carousel-item.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/navigation/carousel-item.md) |
+| `<iswc-tree>` | navigation/tree.md | [navigation/tree.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/navigation/tree.md) |
+| `<iswc-tree-item>` | Nodo de <iswc-tree>. | [navigation/tree-item.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/navigation/tree-item.md) |
+| `<iswc-stepper>` | navigation/stepper.md | [navigation/stepper.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/navigation/stepper.md) |
+| `<iswc-stepper-step>` | Paso de <iswc-stepper>. | [navigation/stepper-step.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/navigation/stepper-step.md) |
+| `<iswc-mega-menu>` | navigation/mega-menu.md | [navigation/mega-menu.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/navigation/mega-menu.md) |
 
 ### forms
 
 | Tag | Resumen | Guía |
 | --- | --- | --- |
-| `<iswc-combobox>` | forms/combobox.md | [forms/combobox.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/combobox.md) |
-| `<iswc-option>` | forms/option.md | [forms/option.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/option.md) |
-| `<iswc-checkbox>` | forms/checkbox.md | [forms/checkbox.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/checkbox.md) |
-| `<iswc-switch>` | forms/switch.md | [forms/switch.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/switch.md) |
-| `<iswc-radio-group>` | forms/radio-group.md | [forms/radio-group.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/radio-group.md) |
-| `<iswc-radio>` | forms/radio.md | [forms/radio.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/radio.md) |
-| `<iswc-input>` | forms/input.md | [forms/input.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/input.md) |
-| `<iswc-textarea>` | forms/textarea.md | [forms/textarea.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/textarea.md) |
-| `<iswc-slider>` | forms/slider.md | [forms/slider.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/slider.md) |
-| `<iswc-rating>` | forms/rating.md | [forms/rating.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/rating.md) |
-| `<iswc-select>` | forms/select.md | [forms/select.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/select.md) |
-| `<iswc-color-picker>` | forms/color-picker.md | [forms/color-picker.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/color-picker.md) |
-| `<iswc-file-input>` | forms/file-input.md | [forms/file-input.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/file-input.md) |
-| `<iswc-date-picker>` | forms/date-picker.md | [forms/date-picker.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/date-picker.md) |
-| `<iswc-month-calendar>` | forms/month-calendar.md | [forms/month-calendar.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/month-calendar.md) |
-| `<iswc-year-calendar>` | forms/year-calendar.md | [forms/year-calendar.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/year-calendar.md) |
-| `<iswc-date-range-picker>` | forms/date-range-picker.md | [forms/date-range-picker.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/date-range-picker.md) |
-| `<iswc-time-clock>` | forms/time-clock.md | [forms/time-clock.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/time-clock.md) |
-| `<iswc-digital-clock>` | forms/digital-clock.md | [forms/digital-clock.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/digital-clock.md) |
-| `<iswc-date-field>` | Captura, selección y validación de valores compatibles con formularios. | [forms/date-field.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/date-field.md) |
-| `<iswc-time-field>` | Captura, selección y validación de valores compatibles con formularios. | [forms/time-field.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/time-field.md) |
-| `<iswc-date-time-field>` | Captura, selección y validación de valores compatibles con formularios. | [forms/date-time-field.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/date-time-field.md) |
-| `<iswc-date-input>` | forms/date-input.md | [forms/date-input.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/date-input.md) |
-| `<iswc-time-input>` | forms/time-input.md | [forms/time-input.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/time-input.md) |
-| `<iswc-date-time-input>` | forms/date-time-input.md | [forms/date-time-input.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/date-time-input.md) |
-| `<iswc-date-range-input>` | forms/date-range-input.md | [forms/date-range-input.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/date-range-input.md) |
-| `<iswc-pin-input>` | forms/pin-input.md | [forms/pin-input.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/pin-input.md) |
-| `<iswc-masked-input>` | forms/masked-input.md | [forms/masked-input.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/masked-input.md) |
-| `<iswc-inline-edit>` | forms/inline-edit.md | [forms/inline-edit.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/inline-edit.md) |
-| `<iswc-mention>` | forms/mention.md | [forms/mention.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/mention.md) |
-| `<iswc-duration-picker>` | forms/duration-picker.md | [forms/duration-picker.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/duration-picker.md) |
-| `<iswc-dropzone>` | forms/dropzone.md | [forms/dropzone.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/dropzone.md) |
-| `<iswc-full-calendar>` | forms/full-calendar.md | [forms/full-calendar.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/full-calendar.md) |
-| `<iswc-signature>` | forms/signature.md | [forms/signature.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/signature.md) |
-| `<iswc-rte>` | forms/rte.md | [forms/rte.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/rte.md) |
-| `<iswc-doc-editor>` | forms/doc-editor.md | [forms/doc-editor.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/forms/doc-editor.md) |
+| `<iswc-combobox>` | forms/combobox.md | [forms/combobox.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/combobox.md) |
+| `<iswc-option>` | forms/option.md | [forms/option.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/option.md) |
+| `<iswc-checkbox>` | forms/checkbox.md | [forms/checkbox.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/checkbox.md) |
+| `<iswc-switch>` | forms/switch.md | [forms/switch.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/switch.md) |
+| `<iswc-radio-group>` | forms/radio-group.md | [forms/radio-group.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/radio-group.md) |
+| `<iswc-radio>` | forms/radio.md | [forms/radio.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/radio.md) |
+| `<iswc-input>` | forms/input.md | [forms/input.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/input.md) |
+| `<iswc-textarea>` | forms/textarea.md | [forms/textarea.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/textarea.md) |
+| `<iswc-slider>` | forms/slider.md | [forms/slider.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/slider.md) |
+| `<iswc-rating>` | forms/rating.md | [forms/rating.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/rating.md) |
+| `<iswc-select>` | forms/select.md | [forms/select.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/select.md) |
+| `<iswc-color-picker>` | forms/color-picker.md | [forms/color-picker.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/color-picker.md) |
+| `<iswc-file-input>` | forms/file-input.md | [forms/file-input.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/file-input.md) |
+| `<iswc-date-picker>` | forms/date-picker.md | [forms/date-picker.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/date-picker.md) |
+| `<iswc-month-calendar>` | forms/month-calendar.md | [forms/month-calendar.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/month-calendar.md) |
+| `<iswc-year-calendar>` | forms/year-calendar.md | [forms/year-calendar.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/year-calendar.md) |
+| `<iswc-date-range-picker>` | forms/date-range-picker.md | [forms/date-range-picker.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/date-range-picker.md) |
+| `<iswc-time-clock>` | forms/time-clock.md | [forms/time-clock.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/time-clock.md) |
+| `<iswc-digital-clock>` | forms/digital-clock.md | [forms/digital-clock.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/digital-clock.md) |
+| `<iswc-date-field>` | Captura, selección y validación de valores compatibles con formularios. | [forms/date-field.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/date-field.md) |
+| `<iswc-time-field>` | Captura, selección y validación de valores compatibles con formularios. | [forms/time-field.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/time-field.md) |
+| `<iswc-date-time-field>` | Captura, selección y validación de valores compatibles con formularios. | [forms/date-time-field.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/date-time-field.md) |
+| `<iswc-date-input>` | forms/date-input.md | [forms/date-input.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/date-input.md) |
+| `<iswc-time-input>` | forms/time-input.md | [forms/time-input.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/time-input.md) |
+| `<iswc-date-time-input>` | forms/date-time-input.md | [forms/date-time-input.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/date-time-input.md) |
+| `<iswc-date-range-input>` | forms/date-range-input.md | [forms/date-range-input.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/date-range-input.md) |
+| `<iswc-pin-input>` | forms/pin-input.md | [forms/pin-input.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/pin-input.md) |
+| `<iswc-masked-input>` | forms/masked-input.md | [forms/masked-input.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/masked-input.md) |
+| `<iswc-inline-edit>` | forms/inline-edit.md | [forms/inline-edit.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/inline-edit.md) |
+| `<iswc-mention>` | forms/mention.md | [forms/mention.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/mention.md) |
+| `<iswc-duration-picker>` | forms/duration-picker.md | [forms/duration-picker.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/duration-picker.md) |
+| `<iswc-dropzone>` | forms/dropzone.md | [forms/dropzone.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/dropzone.md) |
+| `<iswc-full-calendar>` | forms/full-calendar.md | [forms/full-calendar.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/full-calendar.md) |
+| `<iswc-signature>` | forms/signature.md | [forms/signature.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/signature.md) |
+| `<iswc-rte>` | forms/rte.md | [forms/rte.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/rte.md) |
+| `<iswc-doc-editor>` | forms/doc-editor.md | [forms/doc-editor.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/forms/doc-editor.md) |
 
 ### code
 
 | Tag | Resumen | Guía |
 | --- | --- | --- |
-| `<iswc-code>` | code/code.md | [code/code.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/code/code.md) |
+| `<iswc-code>` | code/code.md | [code/code.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/code/code.md) |
 
 ### data
 
 | Tag | Resumen | Guía |
 | --- | --- | --- |
-| `<iswc-data-grid>` | data/data-grid.md | [data/data-grid.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/data/data-grid.md) |
-| `<iswc-stat>` | data/stat.md | [data/stat.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/data/stat.md) |
-| `<iswc-meta-list>` | Lista de metadatos clave → valor, agrupada por secciones con título (ubicación, autor, estado, etiquetas, ruta…). | [data/meta-list.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/data/meta-list.md) |
-| `<iswc-transfer>` | data/transfer.md | [data/transfer.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/data/transfer.md) |
-| `<iswc-transfer-item>` | Ítem de <iswc-transfer>. | [data/transfer-item.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/data/transfer-item.md) |
-| `<iswc-kanban>` | data/kanban.md | [data/kanban.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/data/kanban.md) |
-| `<iswc-kanban-column>` | Columna de <iswc-kanban>. | [data/kanban-column.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/data/kanban-column.md) |
-| `<iswc-kanban-card>` | Tarjeta de <iswc-kanban>. | [data/kanban-card.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/data/kanban-card.md) |
-| `<iswc-pivot-table>` | data/pivot-table.md | [data/pivot-table.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/data/pivot-table.md) |
-| `<iswc-spreadsheet>` | data/spreadsheet.md | [data/spreadsheet.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/data/spreadsheet.md) |
-| `<iswc-ag-grid>` | data/ag-grid.md | [data/ag-grid.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/data/ag-grid.md) |
+| `<iswc-data-grid>` | data/data-grid.md | [data/data-grid.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/data/data-grid.md) |
+| `<iswc-stat>` | data/stat.md | [data/stat.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/data/stat.md) |
+| `<iswc-meta-list>` | Lista de metadatos clave → valor, agrupada por secciones con título (ubicación, autor, estado, etiquetas, ruta…). | [data/meta-list.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/data/meta-list.md) |
+| `<iswc-transfer>` | data/transfer.md | [data/transfer.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/data/transfer.md) |
+| `<iswc-transfer-item>` | Ítem de <iswc-transfer>. | [data/transfer-item.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/data/transfer-item.md) |
+| `<iswc-kanban>` | data/kanban.md | [data/kanban.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/data/kanban.md) |
+| `<iswc-kanban-column>` | Columna de <iswc-kanban>. | [data/kanban-column.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/data/kanban-column.md) |
+| `<iswc-kanban-card>` | Tarjeta de <iswc-kanban>. | [data/kanban-card.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/data/kanban-card.md) |
+| `<iswc-pivot-table>` | data/pivot-table.md | [data/pivot-table.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/data/pivot-table.md) |
+| `<iswc-spreadsheet>` | data/spreadsheet.md | [data/spreadsheet.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/data/spreadsheet.md) |
+| `<iswc-ag-grid>` | data/ag-grid.md | [data/ag-grid.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/data/ag-grid.md) |
 
 ### data-viz
 
 | Tag | Resumen | Guía |
 | --- | --- | --- |
-| `<iswc-chart>` | charts/chart.md | [charts/chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/charts/chart.md) |
-| `<iswc-bar-chart>` | charts/bar-chart.md | [charts/bar-chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/charts/bar-chart.md) |
-| `<iswc-line-chart>` | charts/line-chart.md | [charts/line-chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/charts/line-chart.md) |
-| `<iswc-pie-chart>` | charts/pie-chart.md | [charts/pie-chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/charts/pie-chart.md) |
-| `<iswc-doughnut-chart>` | charts/doughnut-chart.md | [charts/doughnut-chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/charts/doughnut-chart.md) |
-| `<iswc-radar-chart>` | charts/radar-chart.md | [charts/radar-chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/charts/radar-chart.md) |
-| `<iswc-polar-area-chart>` | charts/polar-area-chart.md | [charts/polar-area-chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/charts/polar-area-chart.md) |
-| `<iswc-scatter-chart>` | charts/scatter-chart.md | [charts/scatter-chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/charts/scatter-chart.md) |
-| `<iswc-bubble-chart>` | charts/bubble-chart.md | [charts/bubble-chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/charts/bubble-chart.md) |
-| `<iswc-sparkline>` | charts/sparkline.md | [charts/sparkline.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/charts/sparkline.md) |
-| `<iswc-waterfall-chart>` | charts/waterfall-chart.md | [charts/waterfall-chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/charts/waterfall-chart.md) |
-| `<iswc-funnel-chart>` | charts/funnel-chart.md | [charts/funnel-chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/charts/funnel-chart.md) |
-| `<iswc-treemap>` | charts/treemap.md | [charts/treemap.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/charts/treemap.md) |
-| `<iswc-gauge>` | data/gauge.md | [data/gauge.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/data/gauge.md) |
-| `<iswc-heatmap>` | data-viz/heatmap.md | [data-viz/heatmap.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/data-viz/heatmap.md) |
-| `<iswc-maps>` | data-viz/maps.md | [data-viz/maps.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/data-viz/maps.md) |
-| `<iswc-map-marker>` | Marcador de <iswc-maps>. | [data-viz/map-marker.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/data-viz/map-marker.md) |
+| `<iswc-chart>` | charts/chart.md | [charts/chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/charts/chart.md) |
+| `<iswc-bar-chart>` | charts/bar-chart.md | [charts/bar-chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/charts/bar-chart.md) |
+| `<iswc-line-chart>` | charts/line-chart.md | [charts/line-chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/charts/line-chart.md) |
+| `<iswc-pie-chart>` | charts/pie-chart.md | [charts/pie-chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/charts/pie-chart.md) |
+| `<iswc-doughnut-chart>` | charts/doughnut-chart.md | [charts/doughnut-chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/charts/doughnut-chart.md) |
+| `<iswc-radar-chart>` | charts/radar-chart.md | [charts/radar-chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/charts/radar-chart.md) |
+| `<iswc-polar-area-chart>` | charts/polar-area-chart.md | [charts/polar-area-chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/charts/polar-area-chart.md) |
+| `<iswc-scatter-chart>` | charts/scatter-chart.md | [charts/scatter-chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/charts/scatter-chart.md) |
+| `<iswc-bubble-chart>` | charts/bubble-chart.md | [charts/bubble-chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/charts/bubble-chart.md) |
+| `<iswc-sparkline>` | charts/sparkline.md | [charts/sparkline.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/charts/sparkline.md) |
+| `<iswc-waterfall-chart>` | charts/waterfall-chart.md | [charts/waterfall-chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/charts/waterfall-chart.md) |
+| `<iswc-funnel-chart>` | charts/funnel-chart.md | [charts/funnel-chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/charts/funnel-chart.md) |
+| `<iswc-treemap>` | charts/treemap.md | [charts/treemap.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/charts/treemap.md) |
+| `<iswc-gauge>` | data/gauge.md | [data/gauge.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/data/gauge.md) |
+| `<iswc-heatmap>` | data-viz/heatmap.md | [data-viz/heatmap.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/data-viz/heatmap.md) |
+| `<iswc-maps>` | data-viz/maps.md | [data-viz/maps.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/data-viz/maps.md) |
+| `<iswc-map-marker>` | Marcador de <iswc-maps>. | [data-viz/map-marker.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/data-viz/map-marker.md) |
 
 ### diagrams
 
 | Tag | Resumen | Guía |
 | --- | --- | --- |
-| `<iswc-flowchart>` | Relaciones, flujos, estados, estructura o tiempo desde payloads declarativos. | [diagrams/flowchart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/diagrams/flowchart.md) |
-| `<iswc-sequence-diagram>` | diagrams/sequence-diagram.md | [diagrams/sequence-diagram.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/diagrams/sequence-diagram.md) |
-| `<iswc-diagram-lightbox>` | diagrams/diagram-lightbox.md | [diagrams/diagram-lightbox.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/diagrams/diagram-lightbox.md) |
-| `<iswc-class-diagram>` | diagrams/class-diagram.md | [diagrams/class-diagram.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/diagrams/class-diagram.md) |
-| `<iswc-state-diagram>` | diagrams/state-diagram.md | [diagrams/state-diagram.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/diagrams/state-diagram.md) |
-| `<iswc-er-diagram>` | diagrams/er-diagram.md | [diagrams/er-diagram.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/diagrams/er-diagram.md) |
-| `<iswc-er-editor>` | Editor visual del diagrama entidad-relación. | [diagrams/er-editor.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/diagrams/er-editor.md) |
-| `<iswc-diagram-view-app>` | Abrir cualquier diagrama del kit por enlace, en solo vista o en edición, sin reimplementar el visor. | [diagrams/utils/diagram-studio.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/diagrams/utils/diagram-studio.md) |
-| `<iswc-diagram-edit-app>` | Abrir cualquier diagrama del kit por enlace, en solo vista o en edición, sin reimplementar el visor. | [diagrams/utils/diagram-studio.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/diagrams/utils/diagram-studio.md) |
-| `<iswc-block-diagram>` | diagrams/block-diagram.md | [diagrams/block-diagram.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/diagrams/block-diagram.md) |
-| `<iswc-component-diagram>` | diagrams/component-diagram.md | [diagrams/component-diagram.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/diagrams/component-diagram.md) |
-| `<iswc-mindmap>` | diagrams/mindmap.md | [diagrams/mindmap.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/diagrams/mindmap.md) |
-| `<iswc-gantt>` | diagrams/gantt.md | [diagrams/gantt.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/diagrams/gantt.md) |
-| `<iswc-timeline>` | diagrams/timeline.md | [diagrams/timeline.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/diagrams/timeline.md) |
-| `<iswc-org-chart>` | diagrams/org-chart.md | [diagrams/org-chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/diagrams/org-chart.md) |
-| `<iswc-sankey-diagram>` | diagrams/sankey-diagram.md | [diagrams/sankey-diagram.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/diagrams/sankey-diagram.md) |
-| `<iswc-quadrant-chart>` | diagrams/quadrant-chart.md | [diagrams/quadrant-chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/diagrams/quadrant-chart.md) |
-| `<iswc-venn-diagram>` | diagrams/venn-diagram.md | [diagrams/venn-diagram.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/diagrams/venn-diagram.md) |
-| `<iswc-use-case-diagram>` | diagrams/use-case-diagram.md | [diagrams/use-case-diagram.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/diagrams/use-case-diagram.md) |
-| `<iswc-swimlane-diagram>` | diagrams/swimlane-diagram.md | [diagrams/swimlane-diagram.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/diagrams/swimlane-diagram.md) |
-| `<iswc-journey-map>` | diagrams/journey-map.md | [diagrams/journey-map.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/diagrams/journey-map.md) |
+| `<iswc-flowchart>` | Relaciones, flujos, estados, estructura o tiempo desde payloads declarativos. | [diagrams/flowchart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/diagrams/flowchart.md) |
+| `<iswc-sequence-diagram>` | diagrams/sequence-diagram.md | [diagrams/sequence-diagram.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/diagrams/sequence-diagram.md) |
+| `<iswc-diagram-lightbox>` | diagrams/diagram-lightbox.md | [diagrams/diagram-lightbox.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/diagrams/diagram-lightbox.md) |
+| `<iswc-class-diagram>` | diagrams/class-diagram.md | [diagrams/class-diagram.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/diagrams/class-diagram.md) |
+| `<iswc-state-diagram>` | diagrams/state-diagram.md | [diagrams/state-diagram.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/diagrams/state-diagram.md) |
+| `<iswc-er-diagram>` | diagrams/er-diagram.md | [diagrams/er-diagram.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/diagrams/er-diagram.md) |
+| `<iswc-er-editor>` | Editor visual del diagrama entidad-relación. | [diagrams/er-editor.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/diagrams/er-editor.md) |
+| `<iswc-diagram-view-app>` | Abrir cualquier diagrama del kit por enlace, en solo vista o en edición, sin reimplementar el visor. | [diagrams/utils/diagram-studio.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/diagrams/utils/diagram-studio.md) |
+| `<iswc-diagram-edit-app>` | Abrir cualquier diagrama del kit por enlace, en solo vista o en edición, sin reimplementar el visor. | [diagrams/utils/diagram-studio.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/diagrams/utils/diagram-studio.md) |
+| `<iswc-block-diagram>` | diagrams/block-diagram.md | [diagrams/block-diagram.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/diagrams/block-diagram.md) |
+| `<iswc-component-diagram>` | diagrams/component-diagram.md | [diagrams/component-diagram.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/diagrams/component-diagram.md) |
+| `<iswc-mindmap>` | diagrams/mindmap.md | [diagrams/mindmap.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/diagrams/mindmap.md) |
+| `<iswc-gantt>` | diagrams/gantt.md | [diagrams/gantt.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/diagrams/gantt.md) |
+| `<iswc-timeline>` | diagrams/timeline.md | [diagrams/timeline.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/diagrams/timeline.md) |
+| `<iswc-org-chart>` | diagrams/org-chart.md | [diagrams/org-chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/diagrams/org-chart.md) |
+| `<iswc-sankey-diagram>` | diagrams/sankey-diagram.md | [diagrams/sankey-diagram.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/diagrams/sankey-diagram.md) |
+| `<iswc-quadrant-chart>` | diagrams/quadrant-chart.md | [diagrams/quadrant-chart.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/diagrams/quadrant-chart.md) |
+| `<iswc-venn-diagram>` | diagrams/venn-diagram.md | [diagrams/venn-diagram.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/diagrams/venn-diagram.md) |
+| `<iswc-use-case-diagram>` | diagrams/use-case-diagram.md | [diagrams/use-case-diagram.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/diagrams/use-case-diagram.md) |
+| `<iswc-swimlane-diagram>` | diagrams/swimlane-diagram.md | [diagrams/swimlane-diagram.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/diagrams/swimlane-diagram.md) |
+| `<iswc-journey-map>` | diagrams/journey-map.md | [diagrams/journey-map.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/diagrams/journey-map.md) |
 
 ### overlays
 
 | Tag | Resumen | Guía |
 | --- | --- | --- |
-| `<iswc-command-palette>` | overlays/command-palette.md | [overlays/command-palette.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/overlays/command-palette.md) |
-| `<iswc-pdf-viewer>` | overlays/pdf-viewer.md | [overlays/pdf-viewer.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/overlays/pdf-viewer.md) |
-| `<iswc-window>` | overlays/window.md | [overlays/window.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/overlays/window.md) |
+| `<iswc-command-palette>` | overlays/command-palette.md | [overlays/command-palette.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/overlays/command-palette.md) |
+| `<iswc-pdf-viewer>` | overlays/pdf-viewer.md | [overlays/pdf-viewer.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/overlays/pdf-viewer.md) |
+| `<iswc-window>` | overlays/window.md | [overlays/window.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/overlays/window.md) |
 
 ### files
 
 | Tag | Resumen | Guía |
 | --- | --- | --- |
-| `<iswc-txt-view>` | files/txt-view.md | [files/txt-view.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/files/txt-view.md) |
-| `<iswc-txt-edit>` | files/txt-edit.md | [files/txt-edit.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/files/txt-edit.md) |
-| `<iswc-csv-view>` | files/csv-view.md | [files/csv-view.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/files/csv-view.md) |
-| `<iswc-csv-edit>` | files/csv-edit.md | [files/csv-edit.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/files/csv-edit.md) |
-| `<iswc-docx-view>` | files/docx-view.md | [files/docx-view.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/files/docx-view.md) |
-| `<iswc-pptx-view>` | files/pptx-view.md | [files/pptx-view.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/files/pptx-view.md) |
-| `<iswc-file-view>` | files/file-view.md | [files/file-view.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/files/file-view.md) |
-| `<iswc-file-edit>` | files/file-edit.md | [files/file-edit.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/files/file-edit.md) |
+| `<iswc-txt-view>` | files/txt-view.md | [files/txt-view.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/files/txt-view.md) |
+| `<iswc-txt-edit>` | files/txt-edit.md | [files/txt-edit.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/files/txt-edit.md) |
+| `<iswc-csv-view>` | files/csv-view.md | [files/csv-view.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/files/csv-view.md) |
+| `<iswc-csv-edit>` | files/csv-edit.md | [files/csv-edit.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/files/csv-edit.md) |
+| `<iswc-docx-view>` | files/docx-view.md | [files/docx-view.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/files/docx-view.md) |
+| `<iswc-pptx-view>` | files/pptx-view.md | [files/pptx-view.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/files/pptx-view.md) |
+| `<iswc-file-view>` | files/file-view.md | [files/file-view.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/files/file-view.md) |
+| `<iswc-file-edit>` | files/file-edit.md | [files/file-edit.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/files/file-edit.md) |
 
 ### preview
 
 | Tag | Resumen | Guía |
 | --- | --- | --- |
-| `<iswc-preview-component>` | Shell de la galería. | [layout/preview-component.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/layout/preview-component.md) |
-| `<iswc-doc-demo>` | layout/doc-demo.md | [layout/doc-demo.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/layout/doc-demo.md) |
-| `<iswc-preview-controls>` | Panel de knobs del playground de la galería. | [layout/preview-controls.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/layout/preview-controls.md) |
-| `<iswc-playground>` | preview/playground.md | [preview/playground.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/c08f58a5a048a396b7eeca23cb222b267bdf8ac6/src/components/preview/playground.md) |
+| `<iswc-preview-component>` | Shell de la galería. | [layout/preview-component.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/layout/preview-component.md) |
+| `<iswc-doc-demo>` | layout/doc-demo.md | [layout/doc-demo.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/layout/doc-demo.md) |
+| `<iswc-preview-controls>` | Panel de knobs del playground de la galería. | [layout/preview-controls.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/layout/preview-controls.md) |
+| `<iswc-playground>` | preview/playground.md | [preview/playground.md](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/preview/playground.md) |
 | `<iswc-slots-pg>` | Ver la guía del módulo antes de crear otro control. | — |
 | `<iswc-examples-carousel>` | Ver la guía del módulo antes de crear otro control. | — |
 | `<iswc-demo-section>` | Ver la guía del módulo antes de crear otro control. | — |

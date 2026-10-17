@@ -4,14 +4,14 @@
 //   W-LOG-11   si el API no responde bien, el login muestra el error y no entra
 //   W-LOG-12   con sesión, «Salir» cierra la sesión y vuelve al login
 //
-// El servidor de e2e es estático (sin /api): /api/login responde 404. El login real contra DER lo
+// El servidor de e2e es estático (sin /api): POST /api/login responde 4xx (405). El login real contra DER lo
 // cubre el e2e del repo `api`; la lógica de sesión, tests/vistas/sesion.test.ts.
 import { definirPruebas } from '../../src/vendor/iswc-root/tools/pruebas.ts';
 import { abrir, conSesionDePrueba, enSombra, esperar } from '../../scripts/gate/e2e/harness.ts';
 
 let s: Awaited<ReturnType<typeof abrir>>;
 const vista = () => document.querySelector('erp-app')?.shadowRoot?.querySelector('main')?.getAttribute('data-vista') ?? '';
-const login = () => document.querySelector('erp-app')?.shadowRoot?.querySelector('erp-login')?.shadowRoot?.querySelector('iswc-login') ?? null;
+// Ruta al <iswc-login> (se repite inline: page.evaluate serializa solo la función, sin cierres).
 
 export default definirPruebas([
   {
@@ -20,8 +20,8 @@ export default definirPruebas([
     async correr({ eq, expect }) {
       await esperar(s.page, () => !!document.querySelector('erp-app')?.shadowRoot?.querySelector('main'), 30_000);
       eq('vista', await s.page.evaluate(vista, undefined), 'login');
-      await esperar(s.page, () => !!login());
-      expect('iswc-login montado', await s.page.evaluate(() => !!login(), undefined));
+      await esperar(s.page, () => !!document.querySelector('erp-app')?.shadowRoot?.querySelector('erp-login')?.shadowRoot?.querySelector('iswc-login'));
+      expect('iswc-login montado', await s.page.evaluate(() => !!document.querySelector('erp-app')?.shadowRoot?.querySelector('erp-login')?.shadowRoot?.querySelector('iswc-login'), undefined));
       expect('sin botón Salir', !(await enSombra(s.page, ['erp-app', '#salir'])));
     },
   },
@@ -31,13 +31,14 @@ export default definirPruebas([
     async correr({ eq, expect }) {
       // El contrato de <iswc-login> es su evento de envío: se emite como lo haría el formulario.
       await s.page.evaluate(() => {
-        login()?.dispatchEvent(new CustomEvent('iswc-login-submit', {
+        document.querySelector('erp-app')?.shadowRoot?.querySelector('erp-login')?.shadowRoot?.querySelector('iswc-login')?.dispatchEvent(new CustomEvent('iswc-login-submit', {
           detail: { username: 'admin', password: 'cualquiera', remember: false },
           bubbles: true, composed: true,
         }));
       }, undefined);
-      await esperar(s.page, () => !!login()?.getAttribute('error'));
-      eq('mensaje', await s.page.evaluate(() => login()?.getAttribute('error'), undefined), 'Error del servidor (404)');
+      await esperar(s.page, () => !!document.querySelector('erp-app')?.shadowRoot?.querySelector('erp-login')?.shadowRoot?.querySelector('iswc-login')?.getAttribute('error'));
+      const error = String(await s.page.evaluate(() => document.querySelector('erp-app')?.shadowRoot?.querySelector('erp-login')?.shadowRoot?.querySelector('iswc-login')?.getAttribute('error'), undefined));
+      expect('muestra el status HTTP, no «sin conexión»', /^Error del servidor \(4\d\d\)$/.test(error), error);
       eq('sigue en login', await s.page.evaluate(vista, undefined), 'login');
       expect('nada guardado', await s.page.evaluate(() => sessionStorage.getItem('erp:sesion') === null, undefined));
     },
