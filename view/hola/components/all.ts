@@ -6,3 +6,5 @@ setCssBase(new URL('../../../', import.meta.url).href);
 await import('./erp-hola-mundo.js');
 await import('./erp-hola.js');
 await import('./erp-consola.js');
+await import('./erp-catalogo-plural.js');
+await import('./erp-catalogo-singular.js');

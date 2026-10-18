@@ -31,7 +31,7 @@ export const PREFIJO = 'erp';
 export const APP_TAGS = ['erp-app'] as const;
 
 export const VIEW_TAGS = {
-  hola: ['erp-hola-mundo', 'erp-hola', 'erp-consola'],
+  hola: ['erp-hola-mundo', 'erp-hola', 'erp-consola', 'erp-catalogo-plural', 'erp-catalogo-singular'],
   login: ['erp-login'],
 } as const satisfies Record<string, readonly `erp-${string}`[]>;
 

@@ -41,13 +41,17 @@ const ErpHola = crearComponente<Props>(
         <header class="panel-head">
           <h1 class="titulo">Bases de datos</h1>
           <p class="lede">Bases SQLite administradas por el API. Reusa el kit <code>iswc</code>.</p>
-        <div class="acc"><iswc-button id="consola" color="brand" variant="filled"><iswc-icon slot="start" icon="mdi:console"></iswc-icon> Consola SQL</iswc-button></div>
+        <div class="acc"><iswc-button id="consola" color="brand" variant="filled"><iswc-icon slot="start" icon="mdi:console"></iswc-icon> Consola SQL</iswc-button>
+            <iswc-button id="catalogo" color="brand" variant="filled"><iswc-icon slot="start" icon="mdi:database-search"></iswc-icon> Catálogo</iswc-button></div>
         </header>
         ${props.error ? `<iswc-callout color="danger">${esc(props.error)}</iswc-callout>` : ''}
         <div class="grid">${cards || '<p class="vacio">No hay bases todavía.</p>'}</div>
       </section>
-      <erp-consola></erp-consola>`;
-    this.querySelector('#consola')?.addEventListener('iswc-click', () => { window.dispatchEvent(new Event('erp-open-consola')); });
+      <erp-consola></erp-consola>
+      <erp-catalogo-plural></erp-catalogo-plural>
+      <erp-catalogo-singular></erp-catalogo-singular>`;
+    const _consola = host.querySelector('#consola'); if (_consola) _consola.addEventListener('iswc-click', () => { window.dispatchEvent(new Event('erp-open-consola')); });
+    const _catalogo = host.querySelector('#catalogo'); if (_catalogo) _catalogo.addEventListener('iswc-click', () => { window.dispatchEvent(new Event('erp-open-catalogo')); });
   },
 );
 

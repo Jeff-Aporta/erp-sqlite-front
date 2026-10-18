@@ -1,0 +1,22 @@
+:host { display: block; }
+.panel { display: flex; flex-direction: column; gap: 1rem; }
+.panel-head { display: flex; flex-direction: column; gap: .25rem; }
+.fila { display: flex; gap: .75rem; align-items: center; flex-wrap: wrap; }
+.titulo { font: 600 1.25rem/1.2 'Poppins', system-ui, sans-serif; margin: 0; }
+.muted { color: var(--erp-muted, #687087); font: 500 .9rem 'Poppins', system-ui, sans-serif; }
+.lbl { font: 500 .9rem 'Poppins', system-ui, sans-serif; }
+.sel, .inp { padding: .5rem .65rem; border: 1px solid var(--erp-line, #d8dce5); border-radius: 8px; font: 500 .9rem 'Poppins', system-ui, sans-serif; background: var(--erp-bg, #fff); color: inherit; }
+.inp { min-width: 220px; }
+.chk { font: 500 .9rem 'Poppins', system-ui, sans-serif; display: inline-flex; gap: .35rem; align-items: center; }
+.cargando { display: flex; gap: .5rem; align-items: center; color: var(--erp-muted, #687087); font: 500 .9rem 'Poppins', system-ui, sans-serif; }
+.tabla-wrap { overflow: auto; border: 1px solid var(--erp-line, #d8dce5); border-radius: 8px; background: var(--erp-bg, #fff); }
+.tabla { width: 100%; border-collapse: collapse; font: 500 .9rem 'Poppins', system-ui, sans-serif; }
+.tabla th, .tabla td { padding: .5rem .65rem; border-bottom: 1px solid var(--erp-line, #d8dce5); text-align: left; vertical-align: top; max-width: 320px; overflow: hidden; text-overflow: ellipsis; }
+.tabla th { background: rgba(85,98,234,.06); position: sticky; top: 0; }
+.tabla th .tipo { display: block; color: var(--erp-muted, #687087); font: 400 .75rem 'Poppins', system-ui, sans-serif; font-weight: 400; }
+.tabla td { font-family: 'JetBrains Mono', monospace; font-size: .85rem; }
+.tabla .vacio { text-align: center; color: var(--erp-muted, #687087); padding: 1rem; }
+.sql { border: 1px solid var(--erp-line, #d8dce5); border-radius: 8px; padding: .5rem .75rem; background: var(--erp-bg, #fff); }
+.sql summary { cursor: pointer; font: 600 .9rem 'Poppins', system-ui, sans-serif; }
+.ta { width: 100%; box-sizing: border-box; padding: .5rem .65rem; border: 1px solid var(--erp-line, #d8dce5); border-radius: 8px; font: 500 .9rem 'JetBrains Mono', monospace; background: var(--erp-bg, #fff); color: inherit; margin-top: .5rem; resize: vertical; }
+.resultado { background: rgba(0,0,0,.04); border-radius: 8px; padding: .5rem .65rem; font: 500 .85rem 'JetBrains Mono', monospace; overflow: auto; margin-top: .5rem; }
