@@ -1,0 +1,35 @@
+@use "tokens" as t;
+@use "mixins" as m;
+
+/* erp-consola — diálogo con selector de base, textarea SQL, resultados. */
+:host { @include m.host-bloque; display: contents; }
+
+.fila { display: flex; align-items: center; gap: t.esp(3); flex-wrap: wrap; margin-bottom: t.esp(3); }
+.lbl { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--iswc-text-muted); }
+.sel { padding: 0.4rem 0.6rem; border-radius: var(--iswc-radius-sm); border: 1px solid var(--iswc-border); background: var(--iswc-bg-elev); color: var(--iswc-text); font: inherit; min-width: 12rem; }
+.chk { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--iswc-text-soft); font-size: 0.9rem; }
+
+.ta {
+  width: 100%; box-sizing: border-box;
+  font-family: "Fira Code", "JetBrains Mono", "Cascadia Code", Consolas, ui-monospace, monospace;
+  font-size: 0.9rem; line-height: 1.5;
+  padding: t.esp(3);
+  border-radius: var(--iswc-radius);
+  border: 1px solid var(--iswc-border);
+  background: var(--iswc-bg-elev);
+  color: var(--iswc-text);
+  resize: vertical; min-height: 9rem;
+}
+.err { margin-top: t.esp(2); }
+.res { margin-top: t.esp(3); }
+.acc { display: flex; gap: t.esp(2); justify-content: flex-end; }
+
+/* Resultados en tabla */
+.meta { font-size: 0.8rem; color: var(--iswc-text-muted); margin-bottom: t.esp(2); }
+.tw { overflow: auto; max-height: 50vh; border: 1px solid var(--iswc-border-soft); border-radius: var(--iswc-radius-sm); }
+.tab { width: 100%; border-collapse: collapse; font-size: 0.85rem; font-family: "Fira Code", "JetBrains Mono", Consolas, monospace; }
+.tab th, .tab td { padding: 0.45rem 0.7rem; text-align: left; border-bottom: 1px solid var(--iswc-border-soft); white-space: nowrap; }
+.tab th { position: sticky; top: 0; background: var(--iswc-bg-elev); color: var(--iswc-text-muted); font-weight: 600; text-transform: uppercase; font-size: 0.72rem; letter-spacing: 0.04em; }
+.tab tbody tr:hover { background: color-mix(in srgb, var(--iswc-accent, #2f6fed) 8%, transparent); }
+
+pre { background: var(--iswc-bg-elev); border: 1px solid var(--iswc-border-soft); border-radius: var(--iswc-radius-sm); padding: t.esp(3); overflow: auto; font-size: 0.8rem; }
