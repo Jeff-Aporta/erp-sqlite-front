@@ -1,4 +1,4 @@
-<!-- Copia de skills/iswc-root/catalog.md del kit Jeff-Aporta/is-webcomponents@7ee7b872b431db52835da07d9ea189d7d64c2562. No editar: se refresca con `deno task vendor:iswc`. -->
+<!-- Copia de skills/iswc-root/catalog.md del kit Jeff-Aporta/is-webcomponents@aebd1850cde940e967076675ab422c7116c9909b. No editar: se refresca con `deno task vendor:iswc`. -->
 <!-- @vendor 2026-10-14T16:13:19.844Z Jeff-Aporta/is-webcomponents@main skills/iswc-root/catalog.md -->
 # Catálogo iswc-* (inventario completo)
 
@@ -29,14 +29,14 @@ Skill general: [SKILL.md](SKILL.md) · Runtime sin tag: [tools/runtime.md](tools
 
 | API / módulo | CDN o ruta | Resumen | Guía |
 | --- | --- | --- | --- |
-| `iswcLoader` | `core/loader.min.js` | Entry CDN: loadCSS*, load/ensure/has, pin, configure, espejos jsDelivr -> githack -> Pages, sheets, registerApp, SHA quemado. | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/7ee7b872b431db52835da07d9ea189d7d64c2562/src/cdn/loader.md) |
-| `IswcUi / Ui` | `helpers/ui.min.js` | html, adoptCss, define, css, el: primitivas de apps dominio. No es CE. | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/7ee7b872b431db52835da07d9ea189d7d64c2562/src/components/helpers/ui.md) |
-| `mdToHtml` | `helpers/md-lite.min.js` | Markdown -> HTML sin npm; fences codigo e iswc-* (diagramas). | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/7ee7b872b431db52835da07d9ea189d7d64c2562/src/components/helpers/utils/md-lite.md) |
-| `resolveIswcFenceTag` | `helpers/md-iswc-fences.min.js` | Lang fence iswc-* -> tag de diagrama (flowchart, er, sequence, ...). | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/7ee7b872b431db52835da07d9ea189d7d64c2562/src/components/helpers/utils/md-iswc-fences.md) |
-| `hydrateMdEmbeds` | `helpers/md-hydrate.min.js` | Carga perezosa de los iswc-* que pusieron los renders por defecto del markdown. | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/7ee7b872b431db52835da07d9ea189d7d64c2562/src/components/helpers/utils/md-hydrate.md) |
-| `md-editor-api` | `helpers/md-editor-api.min.js` | CRUD/normalizacion para iswc-md-editor (endpoints, fieldMap, token). | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/7ee7b872b431db52835da07d9ea189d7d64c2562/src/components/helpers/utils/md-editor-api.md) |
-| `IswcResponseCache` | `helpers/response-cache.min.js` | SWR IndexedDB: vivo/leer/guardar/invalidar; no bloquea el pintado. | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/7ee7b872b431db52835da07d9ea189d7d64c2562/src/components/helpers/utils/response-cache.md) |
-| `sync-pins` | `scripts/sync-pins.mjs (repo)` | Tras commit del kit: propaga SHA a kit-pin / ISS / PIN (deno task sync:pins). | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/7ee7b872b431db52835da07d9ea189d7d64c2562/scripts/sync-pins.mjs) |
+| `iswcLoader` | `core/loader.min.js` | Entry CDN: loadCSS*, load/ensure/has, pin, configure, espejos jsDelivr -> githack -> Pages, sheets, registerApp, SHA quemado. | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/aebd1850cde940e967076675ab422c7116c9909b/src/cdn/loader.md) |
+| `IswcUi / Ui` | `helpers/ui.min.js` | html, adoptCss, define, css, el: primitivas de apps dominio. No es CE. | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/aebd1850cde940e967076675ab422c7116c9909b/src/components/helpers/ui.md) |
+| `mdToHtml` | `helpers/md-lite.min.js` | Markdown -> HTML sin npm; fences codigo e iswc-* (diagramas). | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/aebd1850cde940e967076675ab422c7116c9909b/src/components/helpers/utils/md-lite.md) |
+| `resolveIswcFenceTag` | `helpers/md-iswc-fences.min.js` | Lang fence iswc-* -> tag de diagrama (flowchart, er, sequence, ...). | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/aebd1850cde940e967076675ab422c7116c9909b/src/components/helpers/utils/md-iswc-fences.md) |
+| `hydrateMdEmbeds` | `helpers/md-hydrate.min.js` | Carga perezosa de los iswc-* que pusieron los renders por defecto del markdown. | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/aebd1850cde940e967076675ab422c7116c9909b/src/components/helpers/utils/md-hydrate.md) |
+| `md-editor-api` | `helpers/md-editor-api.min.js` | CRUD/normalizacion para iswc-md-editor (endpoints, fieldMap, token). | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/aebd1850cde940e967076675ab422c7116c9909b/src/components/helpers/utils/md-editor-api.md) |
+| `IswcResponseCache` | `helpers/response-cache.min.js` | SWR IndexedDB: vivo/leer/guardar/invalidar; no bloquea el pintado. | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/aebd1850cde940e967076675ab422c7116c9909b/src/components/helpers/utils/response-cache.md) |
+| `sync-pins` | `scripts/sync-pins.mjs (repo)` | Tras commit del kit: propaga SHA a kit-pin / ISS / PIN (deno task sync:pins). | [docs](https://github.com/Jeff-Aporta/is-webcomponents/blob/aebd1850cde940e967076675ab422c7116c9909b/scripts/sync-pins.mjs) |
 
 ## Tags por categoría
 

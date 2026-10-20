@@ -7,7 +7,7 @@
  *
  * Eventos: `erp-login-ok { usuario }` al iniciar sesión.
  */
-import { crearComponente, define, el, emitir } from '../../../src/js/base/componente.js';
+import { crearComponente, define, emitir, html } from '../../../src/js/base/componente.js';
 import type { ErpLoginProps } from '../../../src/js/consts/schemas/componentes.schemas.js';
 import { entrar, mensajeError } from '../../../src/js/dominio/sesion.js';
 
@@ -29,25 +29,12 @@ const ErpLogin = crearComponente<ErpLoginProps>(import.meta.url, 'erp-login', { 
       login.busy = false;
     }
   };
-  // WORKAROUND kit @7ee7b872: un <iswc-login> que se mejora YA conectado (desde plantilla HTML) recibe
-  // attributeChangedCallback antes de construir su DOM (lo hace en connectedCallback) y lanza «Cannot set
-  // properties of undefined (setting 'textContent')». Se crea con el tag ya definido (constructor y atributos
-  // desconectados) y luego se inserta. Reportado al kit; quitar cuando iswc-login lo corrija.
-  const montar = () => {
-    if (!host.isConnected || root.querySelector('#login')) return;
-    root.append(el('iswc-login', {
-      id: 'login',
-      part: 'login',
-      heading: 'ERP SQLite',
-      subtitle: 'Administrador de bases SQLite',
-      provider: 'DER',
-      // Sin aviso no debe quedar `notice=""`: `el` omite null.
-      notice: props.aviso || null,
-      'oniswc-login-submit': enviar,
-    }));
-  };
-  if (customElements.get('iswc-login')) montar();
-  else void customElements.whenDefined('iswc-login').then(montar);
+  root.append(html`
+    <iswc-login id="login" part="login" heading="ERP SQLite" subtitle="Administrador de bases SQLite" provider="DER"
+      oniswc-login-submit=${enviar}></iswc-login>
+  `);
+  // Sin aviso no debe quedar `notice=""`: solo se pone cuando hay texto.
+  if (props.aviso) root.querySelector('#login')?.setAttribute('notice', props.aviso);
 });
 
 define('erp-login', ErpLogin);

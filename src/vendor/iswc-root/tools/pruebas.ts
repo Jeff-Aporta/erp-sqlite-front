@@ -1,4 +1,4 @@
-// @vendor iswc-root@7ee7b872b431db52835da07d9ea189d7d64c2562 dist/cdn/vendor-distributions/shared/testing/pruebas.ts
+// @vendor iswc-root@aebd1850cde940e967076675ab422c7116c9909b dist/cdn/vendor-distributions/shared/testing/pruebas.ts
 // No editar: se cambia en el kit y se descarga con `deno task vendor:iswc`.
 // @vendor 2026-10-14T01:16:34.698Z Jeff-Aporta/is-webcomponents@main src/vendor-distributions/shared/testing/pruebas.ts
 // @doc https://cdn.jsdelivr.net/gh/Jeff-Aporta/is-webcomponents@main/skills/iswc-foundation/references/07-pruebas-y-gate.md

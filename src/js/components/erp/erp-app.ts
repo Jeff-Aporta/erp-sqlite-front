@@ -72,36 +72,14 @@ const ErpApp = crearComponente<ErpAppProps>(import.meta.url, 'erp-app', { vista:
   root.append(html`
     <iswc-app-shell brand="ERP SQLite" logo="mdi:database" part="shell">
       ${s ? html`<iswc-app-nav slot="nav" id="nav" oniswc-nav-select=${seleccionar}></iswc-app-nav>` : null}
+      ${s
+        ? html`<iswc-session-menu slot="actions" id="sesion" logged name="${s.usuario.nombre || s.usuario.iusuario}"
+            subtitle="Usuario ${s.usuario.iusuario}" oniswc-logout=${() => void salir()}></iswc-session-menu>`
+        : html`<iswc-session-menu slot="actions" id="sesion" oniswc-login-submit=${enviar}></iswc-session-menu>`}
       <iswc-theme-toggle slot="actions" scope="root" id="tema"></iswc-theme-toggle>
       <div class="vista" part="vista" data-vista=${vista}>${shell}</div>
     </iswc-app-shell>
   `);
-
-  // WORKAROUND kit @7ee7b872: el <iswc-login> interno del session-menu (vía <iswc-login-dropdown>) se mejora
-  // ya conectado; su attributeChangedCallback (compact, password-toggle) corre antes de connectedCallback, que es
-  // donde construye su DOM, y lanza «Cannot set properties of undefined (setting 'textContent')». Se crea
-  // suelto, se fuerza el upgrade de todo su árbol de sombra DESCONECTADO (allí ese callback no pinta) y luego se
-  // inserta. Reportado al kit; quitar cuando iswc-login lo corrija.
-  const tema = root.querySelector('#tema');
-  const montarSesion = () => {
-    if (!tema?.isConnected) return; // la app se repintó mientras se esperaba el tag
-    const menu = document.createElement('iswc-session-menu');
-    menu.id = 'sesion';
-    menu.slot = 'actions';
-    if (s) {
-      menu.setAttribute('logged', '');
-      menu.setAttribute('name', s.usuario.nombre || s.usuario.iusuario);
-      menu.setAttribute('subtitle', `Usuario ${s.usuario.iusuario}`);
-    }
-    menu.addEventListener('iswc-login-submit', enviar);
-    menu.addEventListener('iswc-logout', () => void salir());
-    // Dos pasadas: la primera crea el árbol del login-dropdown; la segunda mejora el <iswc-login> que éste clonó.
-    customElements.upgrade(menu);
-    customElements.upgrade(menu);
-    tema.before(menu);
-  };
-  if (customElements.get('iswc-session-menu')) montarSesion();
-  else void customElements.whenDefined('iswc-session-menu').then(montarSesion);
 
   const nav = root.querySelector<Nav>('#nav');
   if (nav) {

@@ -1,20 +1,20 @@
 {
   "v": 1,
   "files": {
-    "all.min.js": "cthki2",
+    "all.min.js": "3gsi4m",
     "boot.js": "skdza9",
-    "erpLoader.min.js": "krc7bz",
+    "erpLoader.min.js": "lfpbkk",
     "js/api/front.js": "0pigys",
     "js/base/componente.js": "fjq7v5",
     "js/base/props-registro.js": "9a50ww",
     "js/base/zod.js": "i38toz",
     "js/components/erp/erp-app.css": "ftetdy",
-    "js/components/erp/erp-app.js": "2pigp9",
+    "js/components/erp/erp-app.js": "b46rda",
     "js/consts/schemas/componentes.schemas.js": "2gzmom",
     "js/consts/schemas/demo.schemas.js": "30pc74",
     "js/consts/schemas/loader.schemas.js": "nikuky",
     "js/dominio/sesion.js": "6m927q",
-    "js/iswc.js": "080nbt",
+    "js/iswc.js": "hh1l4z",
     "js/kit-tags.js": "2ogi2h",
     "styles/app.css": "53ms4o",
     "view/demo/components/erp-galeria.js": "ayl9a3",
@@ -30,8 +30,8 @@
     "view/hola/components/erp-hola.css": "qpm06x",
     "view/hola/components/erp-hola.js": "7qsobh",
     "view/hola/utils/bienvenida.js": "b52ca3",
-    "view/login/components/all.min.js": "yl1jf1",
+    "view/login/components/all.min.js": "uclkry",
     "view/login/components/erp-login.css": "rcqg2u",
-    "view/login/components/erp-login.js": "z0qbzu"
+    "view/login/components/erp-login.js": "3uf3s5"
   }
 }
