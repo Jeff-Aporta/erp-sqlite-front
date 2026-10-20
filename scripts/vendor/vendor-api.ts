@@ -3,8 +3,9 @@
  *
  *   deno task vendor:api                       # CDN pineado: deno.json → erp.apiSha
  *   deno task vendor:api --sha=<sha40>         # sube el pin y re-vendoriza
- *   deno task vendor:api --local               # desde ../erp-sqlite-api (checkout del monorepo, sin publicar)
- *   ERP_API_SDK=<url|ruta> deno task vendor:api
+ *   ERP_API_SDK=<url> deno task vendor:api     # otra URL publicada (https)
+ *
+ * Siempre desde una URL publicada, nunca desde un checkout local (proyectos herméticos).
  *
  * Fuente publicada: https://cdn.jsdelivr.net/gh/Jeff-Aporta/erp-sqlite-api@<sha40>/dist/cdn/front.ts
  */
@@ -22,23 +23,18 @@ if (shaNuevo !== undefined && !/^[0-9a-f]{40}$/.test(shaNuevo)) throw new Error(
 const sha: string | undefined = shaNuevo ?? config.erp?.apiSha;
 
 const fuente = Deno.env.get('ERP_API_SDK')
-  ?? (arg('local') ? join(raiz, '..', 'erp-sqlite-api', 'dist', 'cdn', 'front.ts') : null)
   ?? (sha ? `https://cdn.jsdelivr.net/gh/${REPO}@${sha}/dist/cdn/front.ts` : null);
 if (!fuente) throw new Error('vendor:api: falta el pin (deno.json → erp.apiSha) o --sha=<sha40>');
+if (!/^https:\/\//.test(fuente)) throw new Error(`vendor:api: la fuente debe ser una URL https publicada, no ${fuente}`);
 
-const remoto = /^https?:\/\//.test(fuente);
-const texto = remoto
-  ? await (async () => {
-    const r = await fetch(fuente);
-    if (!r.ok) throw new Error(`vendor:api: ${fuente} → HTTP ${r.status}`);
-    return await r.text();
-  })()
-  : await Deno.readTextFile(fuente);
+const r = await fetch(fuente);
+if (!r.ok) throw new Error(`vendor:api: ${fuente} → HTTP ${r.status}`);
+const texto = await r.text();
 
 if (!/export function createClient\(/.test(texto)) throw new Error(`vendor:api: ${fuente} no parece el SDK (falta createClient)`);
 
 await Deno.mkdir(dirname(destino), { recursive: true });
-const cabecera = `// @vendor ${new Date().toISOString()} ${remoto ? fuente : 'erp-sqlite-api (checkout local, sin publicar)'}\n`;
+const cabecera = `// @vendor ${new Date().toISOString()} ${fuente}\n`;
 await Deno.writeTextFile(destino, cabecera + texto.replace(/^\/\/ @vendor .*\n/, ''));
 
 if (shaNuevo && shaNuevo !== config.erp?.apiSha) {

@@ -32,7 +32,6 @@ El SDK se toma del CDN del API, pineado en `deno.json` → `erp.apiSha`:
 ```bash
 deno task vendor:api                    # re-vendoriza el pin actual
 deno task vendor:api --sha=<sha40>      # sube el pin al commit publicado de erp-sqlite-api
-deno task vendor:api --local            # desde ../erp-sqlite-api sin publicar (solo para probar)
 ```
 
 ## Despliegue
