@@ -42,4 +42,4 @@ estático (`dist/cdn` va versionado: no hay build en el VPS); nginx lo sirve des
 
 ## Norma
 
-[ESTANDAR — ecosistema VPS](https://github.com/Jeff-Aporta/dev-vps/blob/main/ESTANDAR.md): norma única; gana sobre este repo si hay conflicto.
+[ESTANDAR — ecosistema VPS](https://github.com/Jeff-Aporta/dsh-dev-vps/blob/main/ESTANDAR.md): norma única; gana sobre este repo si hay conflicto.

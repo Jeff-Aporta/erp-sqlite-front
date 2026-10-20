@@ -1,5 +1,5 @@
 # CLAUDE.md — ERP SQLite
-> **Norma única:** [ESTANDAR — ecosistema VPS](https://github.com/Jeff-Aporta/dev-vps/blob/main/ESTANDAR.md). Gana sobre este archivo si hay conflicto.
+> **Norma única:** [ESTANDAR — ecosistema VPS](https://github.com/Jeff-Aporta/dsh-dev-vps/blob/main/ESTANDAR.md). Gana sobre este archivo si hay conflicto.
 
 
 Contrato completo en [`AGENTS.md`](AGENTS.md). Estándar común de las apps iswc:
