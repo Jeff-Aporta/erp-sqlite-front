@@ -13,6 +13,8 @@
  * compartido sube a APP_TAGS. Se publica en `dist/cdn/js/kit-tags.js` para los hosts.
  */
 export const KIT_TAGS = [
+  'iswc-app-nav',
+  'iswc-app-shell',
   'iswc-button',
   'iswc-callout',
   'iswc-card',
@@ -20,6 +22,7 @@ export const KIT_TAGS = [
   'iswc-dialog',
   'iswc-icon',
   'iswc-login',
+  'iswc-session-menu',
   'iswc-tag',
   'iswc-spinner',
   'iswc-theme-toggle',

@@ -9,5 +9,9 @@ import { descargarIconos } from 'https://raw.githubusercontent.com/Jeff-Aporta/i
 await descargarIconos({
   raiz: new URL('..', import.meta.url),
   roots: ['index.html', 'src', 'view'],
-  // extra: ['mdi:broom'],  // ids que el barrido no ve: armados en ejecución o pintados por los componentes del kit
+  // ids que el barrido no ve: armados en ejecución o pintados por los componentes del kit (layout común).
+  extra: [
+    'mdi:account', 'mdi:check', 'mdi:chevron-down', 'mdi:close-circle', 'mdi:information-outline', 'mdi:loading',
+    'mdi:login', 'mdi:logout', 'mdi:menu', 'mdi:weather-night', 'mdi:weather-sunny',
+  ],
 });

@@ -1,43 +1,20 @@
 @use "tokens" as t;
 @use "mixins" as m;
 
-/* erp-app — shell: barra fija arriba y la vista ocupando el resto. */
+/* erp-app — la barra y el scroll los pone <iswc-app-shell> (layout común del kit); aquí solo el
+   host a pantalla completa y el aire de la vista. */
 :host {
   @include m.host-bloque;
-  min-height: 100dvh;
+  height: 100dvh;
   background: var(--iswc-bg);
   color: var(--iswc-text);
 }
 
-.barra {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: t.esp(4);
-  padding: t.esp(3) t.esp(5);
-  border-bottom: 1px solid var(--iswc-border-soft);
-
-  .marca {
-    @include m.una-linea;
-    font-size: 1rem;
-  }
+iswc-app-shell {
+  --iswc-shell-font: var(--iswc-font-sans);
 }
 
 .vista {
   display: block;
   padding: t.esp(5);
-}
-
-.acciones {
-  display: flex;
-  align-items: center;
-  gap: t.esp(3);
-}
-
-.usuario {
-  @include m.una-linea;
-  display: inline-flex;
-  align-items: center;
-  gap: t.esp(1);
-  color: var(--iswc-text-muted);
 }

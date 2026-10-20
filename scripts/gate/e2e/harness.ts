@@ -45,7 +45,14 @@ export async function abrir(ruta = 'index.html', opciones: { llm?: CredencialesM
   const [page] = (await browser.context.pages()) as unknown as Pagina[];
   if (!page) throw new Error('harness: el navegador no abrió página');
   const errores: string[] = [];
-  page.on('console', (m) => { if (m.type() === 'error') errores.push(m.text()); });
+  // Stagehand 4.1 entrega el evento CDP crudo (`Runtime.consoleAPICalled`: { params: { type, args } }), no un
+  // ConsoleMessage con type()/text(): se aceptan las dos formas para que «sin errores de consola» no sea vacío.
+  page.on('console', (m) => {
+    const c = m as unknown as { type?: unknown; text?: unknown; params?: { type?: string; args?: Array<{ value?: unknown; description?: string }> } };
+    const tipo = typeof c.type === 'function' ? (c.type as () => string)() : c.params?.type;
+    if (tipo !== 'error') return;
+    errores.push(typeof c.text === 'function' ? (c.text as () => string)() : (c.params?.args ?? []).map((a) => String(a.value ?? a.description ?? '')).join(' '));
+  });
   await page.goto(new URL(ruta, base).href, { waitUntil: 'load' });
   // La app marca `data-app-ready` al terminar el arranque (o a los 6 s por su watchdog).
   await esperar(page, () => document.documentElement.hasAttribute('data-app-ready'), 15_000);

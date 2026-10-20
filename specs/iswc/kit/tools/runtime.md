@@ -1,4 +1,4 @@
-<!-- Copia de skills/iswc-root/tools/runtime.md del kit Jeff-Aporta/is-webcomponents@027a9dfcc97abfb3b156470dc3e25a86115aeabd. No editar: se refresca con `deno task vendor:iswc`. -->
+<!-- Copia de skills/iswc-root/tools/runtime.md del kit Jeff-Aporta/is-webcomponents@7ee7b872b431db52835da07d9ea189d7d64c2562. No editar: se refresca con `deno task vendor:iswc`. -->
 <!-- @vendor 2026-10-14T16:13:19.844Z Jeff-Aporta/is-webcomponents@main skills/iswc-root/tools/runtime.md -->
 # `/iswc-root:runtime` — APIs sin custom element
 
@@ -12,7 +12,7 @@ Inventario: [`../catalog.md`](../catalog.md) § Módulos API.
 
 ## 1. `iswcLoader` — `core/loader.min.js`
 
-Guía larga: [`cdn/loader.md`](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/cdn/loader.md).
+Guía larga: [`cdn/loader.md`](https://github.com/Jeff-Aporta/is-webcomponents/blob/7ee7b872b431db52835da07d9ea189d7d64c2562/src/cdn/loader.md).
 
 | API | Efecto |
 | --- | --- |
@@ -38,7 +38,7 @@ Pines de apps consumidoras: `deno task sync:pins` (`scripts/sync-pins.mjs`).
 
 ## 2. `IswcUi` / `Ui` — `helpers/ui.min.js`
 
-Guía: [`helpers/ui.md`](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/ui.md).
+Guía: [`helpers/ui.md`](https://github.com/Jeff-Aporta/is-webcomponents/blob/7ee7b872b431db52835da07d9ea189d7d64c2562/src/components/helpers/ui.md).
 
 | Export | Uso |
 | --- | --- |
@@ -69,7 +69,7 @@ Guías: `helpers/utils/md-lite.md`, `md-iswc-fences.md`, `md-hydrate.md`, `md-ed
 ## 4. `response-cache` — `helpers/response-cache.min.js`
 
 SWR en IndexedDB (`createResponseCache`, `IswcResponseCache`, `canonico`).  
-Guía: [`helpers/utils/response-cache.md`](https://github.com/Jeff-Aporta/is-webcomponents/blob/027a9dfcc97abfb3b156470dc3e25a86115aeabd/src/components/helpers/utils/response-cache.md).
+Guía: [`helpers/utils/response-cache.md`](https://github.com/Jeff-Aporta/is-webcomponents/blob/7ee7b872b431db52835da07d9ea189d7d64c2562/src/components/helpers/utils/response-cache.md).
 
 ---
 

@@ -25,13 +25,18 @@ ejemplo vivo en la galería.
 
 ### Catálogo
 
-**`<erp-app>` — shell** `[W-CAT-01]`: barra con la marca y el conmutador de tema; debajo, el shell de la vista activa. `props = { vista }` (`"hola"` por defecto; una vista sin shell cae en `hola`).
+**`<erp-app>` — shell** `[W-CAT-01]`: la app usa el **layout común del kit** (`<iswc-app-shell>` con marca «ERP SQLite», el mismo de todas las apps iswc, pineado al SHA de la app): barra con la marca, las secciones, la sesión y el conmutador de tema; debajo, el shell de la vista activa. `props = { vista }` (`"hola"` por defecto; una vista sin shell cae en `hola`).
+
+- [W-SHELL-01] La app usa el layout común del kit: la barra es `<iswc-app-shell>` con `<iswc-session-menu>` y `<iswc-theme-toggle>` en las acciones; no hay barra propia.
+- [W-SHELL-02] Sin sesión, la barra ofrece «Entrar» y desde ahí se inicia sesión (mismas credenciales DER que la pantalla de login). Un error del API se ve en el panel de la barra y no entra.
+- [W-SHELL-03] Con sesión, la barra muestra el nombre del usuario y las secciones (Bases, Consola SQL, Catálogo); «Cerrar sesión» borra la sesión y vuelve al login.
+- [W-SHELL-04] Sin sesión la vista es la pantalla de login (alternativa equivalente al dropdown, útil en móvil y para el autocompletado del navegador).
 
 **`<erp-hola-mundo>` — título** `[W-CAT-04]`: un título «Hola mundo». Sin props, atributos ni eventos. Es el molde mínimo de un componente.
 
-**`<erp-hola>` — bienvenida (shell de `hola`)** `[W-CAT-02]`: portada con cejilla «ERP SQLite · iswc», el título `<erp-hola-mundo>`, un lema, el botón «Ver cómo está hecha», cuatro chips (Vanilla, Deno, Zod, SCSS) y cuatro tarjetas: Componentes, Vistas, Tipos, Pruebas (icono, título y texto cada una).
+**`<erp-hola>` — panel (shell de `hola`)** `[W-CAT-02]`: con sesión, panel «Bases de datos» con las bases SQLite que administra el API (tablas, vistas y tamaño de cada una) y los accesos «Consola SQL» y «Catálogo». Si el API falla, el panel lo dice en un aviso.
 
-**Modal de la bienvenida** `[W-CAT-03]`: «Ver cómo está hecha» abre un modal «Cómo está hecha» con la regla de los cuatro archivos y los comandos para empezar (`deno install`, `deno task build`, `deno task serve`, `deno task test:all`, uno por línea con su propósito alineado). «Entendido», Esc o un clic fuera lo cierran. Abrir y cerrar se avisan con `erp-hola-modal { abierto }`. `props = { modal = false }` lo abre o cierra desde fuera sin repintar el resto.
+**Secciones de la barra** `[W-CAT-03]`: «Consola SQL» y «Catálogo» (en `<iswc-app-nav>`) abren su panel encima de «Bases», que sigue siendo la sección activa.
 
 ## 3. Guía HOW WEAK
 
@@ -55,9 +60,10 @@ ejemplo vivo en la galería.
 ## 6. Pruebas (WHAT / HOW WEAK)
 
 - [W-COMP-08] Cada componente registrado tiene sus 4 archivos, su `.md` declara las 6 secciones y su `.json` valida contra `iswc-preview/v1`.
-- [W-COMP-09] El dominio de la bienvenida cumple [W-CAT-02] y [W-CAT-03] sin navegador (`tests/vistas/bienvenida`).
+- [W-COMP-09] El dominio de la bienvenida (`view/hola/utils/bienvenida`) se prueba sin navegador (`tests/vistas/bienvenida`).
 - [W-ICO-04] Los íconos de la app están en `assets/iconify/` [W-ICO-01], `deno.json` declara `iswc.host` [W-ICO-02] y el registrador declara `<html data-icons>` (`tests/iconos`); en e2e, la bienvenida tiene `data-icons` absoluto, pinta sus íconos y los deja en localStorage `iswc:icon:*` (`tests/e2e/00.bienvenida`).
-- [W-COMP-10] E2E: la bienvenida arranca, muestra el título y las tarjetas, y el modal se abre y se cierra como lo haría un usuario (`tests/e2e/00.bienvenida`).
+- [W-SHELL-05] E2E de [W-SHELL-01]…[W-SHELL-04] (`tests/e2e/02.login`).
+- [W-COMP-10] E2E: la app arranca, el panel muestra «Bases de datos» con sus accesos y la sección «Consola SQL» de la barra abre la consola (`tests/e2e/00.bienvenida`).
 
 ## 7. Notas
 

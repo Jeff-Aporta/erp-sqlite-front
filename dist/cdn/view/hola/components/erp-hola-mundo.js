@@ -1,1 +1,1 @@
-import{crearComponente as t,define as r,html as a}from"../../../js/base/componente.js?v=38pejm";const e=t(import.meta.url,"erp-hola-mundo",{},o=>{o.append(a`<h1 class="titulo" part="titulo">Hola mundo</h1>`)});r("erp-hola-mundo",e);
+import{crearComponente as t,define as r,html as a}from"../../../js/base/componente.js?v=fjq7v5";const e=t(import.meta.url,"erp-hola-mundo",{},o=>{o.append(a`<h1 class="titulo" part="titulo">Hola mundo</h1>`)});r("erp-hola-mundo",e);

@@ -1,15 +1,7 @@
-import{crearComponente as p,define as l,html as r}from"../../base/componente.js?v=38pejm";import{alCambiar as m,salir as d,sesion as u}from"../../dominio/sesion.js?v=6m927q";const e={hola:"erp-hola",login:"erp-login"},t=new Set;m(()=>{for(const s of t)s.isConnected?s.props={}:t.delete(s)});const g=p(import.meta.url,"erp-app",{vista:"hola"},(s,o,n)=>{t.add(n);const a=u(),i=a?o.vista!=="login"&&e[o.vista]?o.vista:"hola":"login",c=document.createElement(e[i]);s.append(r`
-    <header class="barra" part="barra">
-      <strong class="marca">ERP SQLite</strong>
-      <div class="acciones">
-        ${a?r`
-          <span class="usuario" part="usuario"><iswc-icon icon="mdi:account-circle"></iswc-icon> ${a.usuario.nombre||a.usuario.iusuario}</span>
-          <iswc-button id="salir" variant="text" oniswc-click=${()=>d()}>
-            <iswc-icon slot="start" icon="mdi:logout"></iswc-icon> Salir
-          </iswc-button>
-        `:null}
-        <iswc-theme-toggle scope="root"></iswc-theme-toggle>
-      </div>
-    </header>
-    <main class="vista" part="vista" data-vista=${i}>${c}</main>
-  `)});l("erp-app",g);
+import{crearComponente as h,define as S,html as u}from"../../base/componente.js?v=fjq7v5";import{alCambiar as C,entrar as L,mensajeError as y,salir as A,sesion as P}from"../../dominio/sesion.js?v=6m927q";const v={hola:"erp-hola",login:"erp-login"},g=[{id:"bases",label:"Bases",icon:"mdi:database"},{id:"consola",label:"Consola SQL",icon:"mdi:console",evento:"erp-open-consola"},{id:"catalogo",label:"Cat\xE1logo",icon:"mdi:database-search",evento:"erp-open-catalogo"}],l=new Set;C(()=>{for(const n of l)n.isConnected?n.props={}:l.delete(n)});const M=h(import.meta.url,"erp-app",{vista:"hola"},(n,a,E)=>{l.add(E);const o=P(),c=o?a.vista!=="login"&&v[a.vista]?a.vista:"hola":"login",b=document.createElement(v[c]);let i=!1;const f=async e=>{const t=e.currentTarget,s=e.detail??{};if(!(i||s.mode==="token")){i=!0,t.error="",t.loading=!0;try{await L(String(s.username??"").trim(),String(s.password??""),!!s.remember)}catch(r){t.error=y(r)}finally{t.loading=!1,i=!1}}},w=e=>{const t=e.detail?.id,s=g.find(r=>r.id===t);!s||!("evento"in s)||(e.preventDefault(),globalThis.dispatchEvent(new Event(s.evento)))};n.append(u`
+    <iswc-app-shell brand="ERP SQLite" logo="mdi:database" part="shell">
+      ${o?u`<iswc-app-nav slot="nav" id="nav" oniswc-nav-select=${w}></iswc-app-nav>`:null}
+      <iswc-theme-toggle slot="actions" scope="root" id="tema"></iswc-theme-toggle>
+      <div class="vista" part="vista" data-vista=${c}>${b}</div>
+    </iswc-app-shell>
+  `);const p=n.querySelector("#tema"),m=()=>{if(!p?.isConnected)return;const e=document.createElement("iswc-session-menu");e.id="sesion",e.slot="actions",o&&(e.setAttribute("logged",""),e.setAttribute("name",o.usuario.nombre||o.usuario.iusuario),e.setAttribute("subtitle",`Usuario ${o.usuario.iusuario}`)),e.addEventListener("iswc-login-submit",f),e.addEventListener("iswc-logout",()=>{A()}),customElements.upgrade(e),customElements.upgrade(e),p.before(e)};customElements.get("iswc-session-menu")?m():customElements.whenDefined("iswc-session-menu").then(m);const d=n.querySelector("#nav");d&&(d.rows=[{id:"seccion",label:"Secciones",value:"bases",tabs:g.map(({id:e,label:t,icon:s})=>({id:e,label:t,icon:s}))}])});S("erp-app",M);
